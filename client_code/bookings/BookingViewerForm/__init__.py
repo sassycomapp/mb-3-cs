@@ -1,10 +1,11 @@
-from ._anvil_designer import Form1Template
+from ._anvil_designer import BookingViewerFormTemplate
 from anvil import *
+import anvil.server
 from routing import router
 import m3.components as m3
 
 
-class Form1(Form1Template):
+class BookingViewerForm(BookingViewerFormTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
