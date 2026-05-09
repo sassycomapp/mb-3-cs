@@ -1,11 +1,370 @@
 allow_embedding: false
 db_schema:
-  table_1:
+  activity_log:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: user_id
+      target: users
+      type: link_single
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: action_type
+      type: string
+    - admin_ui: {order: 2, width: 200}
+      client_hidden: false
+      name: description
+      type: string
+    - admin_ui: {order: 3, width: 200}
+      client_hidden: false
+      name: metadata
+      type: simpleObject
+    - admin_ui: {order: 4, width: 200}
+      client_hidden: false
+      name: created_at
+      type: datetime
+    - admin_ui: {order: 5, width: 200}
+      client_hidden: false
+      name: ip_address
+      type: string
+    indexes: []
+    server: full
+    title: activity_log
+  availability_exceptions:
     client: none
     columns: []
     indexes: []
     server: full
-    title: Table 1
+    title: availability_exceptions
+  business_profile:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: business_name
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: description
+      type: string
+    - admin_ui: {order: 2, width: 200}
+      client_hidden: false
+      name: logo
+      type: media
+    - admin_ui: {order: 3, width: 200}
+      client_hidden: false
+      name: contact_email
+      type: string
+    - admin_ui: {order: 4, width: 200}
+      client_hidden: false
+      name: phone
+      type: string
+    - admin_ui: {order: 5, width: 200}
+      client_hidden: false
+      name: website_url
+      type: string
+    - admin_ui: {order: 6, width: 200}
+      client_hidden: false
+      name: tagline
+      type: string
+    - admin_ui: {order: 7, width: 200}
+      client_hidden: false
+      name: address_line_1
+      type: string
+    - admin_ui: {order: 8, width: 200}
+      client_hidden: false
+      name: address_line_2
+      type: string
+    - admin_ui: {order: 9, width: 200}
+      client_hidden: false
+      name: city
+      type: string
+    - admin_ui: {order: 10, width: 200}
+      client_hidden: false
+      name: country
+      type: string
+    - admin_ui: {order: 11, width: 200}
+      client_hidden: false
+      name: postal_code
+      type: string
+    - admin_ui: {order: 12, width: 200}
+      client_hidden: false
+      name: timezone
+      type: string
+    - admin_ui: {order: 13, width: 200}
+      client_hidden: false
+      name: social_facebook
+      type: string
+    - admin_ui: {order: 14, width: 200}
+      client_hidden: false
+      name: social_instagram
+      type: string
+    - admin_ui: {order: 15, width: 200}
+      client_hidden: false
+      name: social_x
+      type: string
+    - admin_ui: {order: 16, width: 200}
+      client_hidden: false
+      name: social_linkedin
+      type: string
+    - admin_ui: {order: 17, width: 200}
+      client_hidden: false
+      name: created_at
+      type: datetime
+    - admin_ui: {order: 18, width: 200}
+      client_hidden: false
+      name: updated_at
+      type: datetime
+    indexes: []
+    server: full
+    title: business_profile
+  config:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: key
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: value
+      type: simpleObject
+    - admin_ui: {order: 2, width: 200}
+      client_hidden: false
+      name: category
+      type: string
+    - admin_ui: {order: 3, width: 200}
+      client_hidden: false
+      name: updated_at
+      type: datetime
+    - admin_ui: {order: 4, width: 200}
+      client_hidden: false
+      name: updated_by
+      target: users
+      type: link_single
+    indexes: []
+    server: full
+    title: config
+  email_config:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: from_email
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: from_name
+      type: string
+    - admin_ui: {order: 2, width: 200}
+      client_hidden: false
+      name: configured
+      type: bool
+    - admin_ui: {order: 3, width: 200}
+      client_hidden: false
+      name: configured_at
+      type: datetime
+    - admin_ui: {order: 4, width: 200}
+      client_hidden: false
+      name: sender_domain_verified
+      type: bool
+    indexes: []
+    server: full
+    title: email_config
+  files:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: path
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: file
+      type: media
+    - admin_ui: {order: 2, width: 200}
+      client_hidden: false
+      name: file_version
+      type: string
+    indexes: []
+    server: full
+    title: files
+  payment_config:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: active_gateway
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: stripe_publishable_key
+      type: string
+    - admin_ui: {order: 2, width: 200}
+      client_hidden: false
+      name: stripe_connected
+      type: bool
+    - admin_ui: {order: 3, width: 200}
+      client_hidden: false
+      name: stripe_connected_at
+      type: datetime
+    - admin_ui: {order: 4, width: 200}
+      client_hidden: false
+      name: paystack_connected
+      type: bool
+    - admin_ui: {order: 5, width: 200}
+      client_hidden: false
+      name: paystack_connected_at
+      type: datetime
+    - admin_ui: {order: 6, width: 200}
+      client_hidden: false
+      name: test_mode
+      type: bool
+    - admin_ui: {order: 7, width: 200}
+      client_hidden: false
+      name: configured_at
+      type: datetime
+    indexes: []
+    server: full
+    title: payment_config
+  rate_limits:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: identifier
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: count
+      type: number
+    - admin_ui: {order: 2, width: 200}
+      client_hidden: false
+      name: reset_time
+      type: datetime
+    - admin_ui: {order: 3, width: 200}
+      client_hidden: false
+      name: last_request
+      type: datetime
+    indexes: []
+    server: full
+    title: rate_limits
+  theme_config:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: primary_color
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: accent_color
+      type: string
+    - admin_ui: {order: 2, width: 200}
+      client_hidden: false
+      name: font_family
+      type: string
+    - admin_ui: {order: 3, width: 200}
+      client_hidden: false
+      name: header_style
+      type: string
+    - admin_ui: {order: 4, width: 200}
+      client_hidden: false
+      name: updated_at
+      type: datetime
+    indexes: []
+    server: full
+    title: theme_config
+  users:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: email
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: enabled
+      type: bool
+    - admin_ui: {order: 2, width: 200}
+      client_hidden: false
+      name: last_login
+      type: datetime
+    - admin_ui: {order: 3, width: 200}
+      client_hidden: false
+      name: password_hash
+      type: string
+    - admin_ui: {order: 4, width: 200}
+      client_hidden: false
+      name: n_password_failures
+      type: number
+    - admin_ui: {order: 5, width: 200}
+      client_hidden: false
+      name: confirmed_email
+      type: bool
+    - admin_ui: {order: 6, width: 200}
+      client_hidden: false
+      name: role
+      type: string
+    - admin_ui: {order: 7, width: 200}
+      client_hidden: false
+      name: account_status
+      type: string
+    - admin_ui: {order: 8, width: 200}
+      client_hidden: false
+      name: phone
+      type: string
+    - admin_ui: {order: 9, width: 200}
+      client_hidden: false
+      name: permissions
+      type: simpleObject
+    - admin_ui: {order: 10, width: 200}
+      client_hidden: false
+      name: created_at
+      type: datetime
+    - admin_ui: {order: 11, width: 200}
+      client_hidden: false
+      name: signed_up
+      type: datetime
+    - admin_ui: {order: 12, width: 200}
+      client_hidden: false
+      name: email_confirmation_key
+      type: string
+    - admin_ui: {order: 13, width: 200}
+      client_hidden: false
+      name: mfa
+      type: simpleObject
+    indexes: []
+    server: full
+    title: users
+  vault:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: name
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: value
+      type: string
+    - admin_ui: {order: 2, width: 200}
+      client_hidden: false
+      name: created_at
+      type: datetime
+    - admin_ui: {order: 3, width: 200}
+      client_hidden: false
+      name: updated_at
+      type: datetime
+    - admin_ui: {order: 4, width: 200}
+      client_hidden: false
+      name: updated_by
+      target: users
+      type: link_single
+    indexes: []
+    server: full
+    title: vault
 dependencies:
 - dep_id: dep_dapp798jbsn8mq
   resolution_hints: {app_id: 4UK6WHQ6UX7AKELK, name: Material 3 Theme, package_name: m3}
