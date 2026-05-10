@@ -110,5 +110,8 @@ unique_ids:
     server_shared.config: '1778325593679893729617217.583'
     server_shared.constants: '1778325581328599357825420.2906'
     server_shared.encryption: '1778325607359675156465964.4946'
+    server_shared.encryption_service: '1778401294918567483449633.2485'
+    server_shared.exceptions: '1778401257515994071036590.4357'
     server_shared.utilities: '1778325553383748636904313.8025'
     server_shared.validators: '1778325565911769495677000.7263'
+    server_shared.vault_service: '1778401334480132074704376.04407'
