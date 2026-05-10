@@ -89,6 +89,98 @@ db_schema:
     indexes: []
     server: full
     title: availability_rules
+  blog_categories:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: category_id
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: client_id
+      target: users
+      type: link_single
+    - admin_ui: {order: 2, width: 200}
+      client_hidden: false
+      name: name
+      type: string
+    - admin_ui: {order: 3, width: 200}
+      client_hidden: false
+      name: slug
+      type: string
+    - admin_ui: {order: 4, width: 200}
+      client_hidden: false
+      name: description
+      type: string
+    indexes: []
+    server: full
+    title: blog_categories
+  blog_posts:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: post_id
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: client_id
+      target: users
+      type: link_single
+    - admin_ui: {order: 2, width: 200}
+      client_hidden: false
+      name: title
+      type: string
+    - admin_ui: {order: 3, width: 200}
+      client_hidden: false
+      name: slug
+      type: string
+    - admin_ui: {order: 4, width: 200}
+      client_hidden: false
+      name: content
+      type: string
+    - admin_ui: {order: 5, width: 200}
+      client_hidden: false
+      name: excerpt
+      type: string
+    - admin_ui: {order: 6, width: 200}
+      client_hidden: false
+      name: featured_image
+      type: media
+    - admin_ui: {order: 7, width: 200}
+      client_hidden: false
+      name: author_id
+      target: users
+      type: link_single
+    - admin_ui: {order: 8, width: 200}
+      client_hidden: false
+      name: category_id
+      target: blog_categories
+      type: link_single
+    - admin_ui: {order: 9, width: 200}
+      client_hidden: false
+      name: status
+      type: string
+    - admin_ui: {order: 10, width: 200}
+      client_hidden: false
+      name: published_at
+      type: datetime
+    - admin_ui: {order: 11, width: 200}
+      client_hidden: false
+      name: created_at
+      type: datetime
+    - admin_ui: {order: 12, width: 200}
+      client_hidden: false
+      name: updated_at
+      type: datetime
+    - admin_ui: {order: 13, width: 200}
+      client_hidden: false
+      name: view_count
+      type: number
+    indexes: []
+    server: full
+    title: blog_posts
   booking_metadata_schemas:
     client: none
     columns:
@@ -537,6 +629,76 @@ db_schema:
     indexes: []
     server: full
     title: email_config
+  email_log:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: recipient
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: subject
+      type: string
+    - admin_ui: {order: 2, width: 200}
+      client_hidden: false
+      name: template_id
+      target: email_templates
+      type: link_single
+    - admin_ui: {order: 3, width: 200}
+      client_hidden: false
+      name: sent_at
+      type: datetime
+    - admin_ui: {order: 4, width: 200}
+      client_hidden: false
+      name: status
+      type: string
+    - admin_ui: {order: 5, width: 200}
+      client_hidden: false
+      name: error_message
+      type: string
+    indexes: []
+    server: full
+    title: email_log
+  email_templates:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: template_id
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: client_id
+      target: users
+      type: link_single
+    - admin_ui: {order: 2, width: 200}
+      client_hidden: false
+      name: name
+      type: string
+    - admin_ui: {order: 3, width: 200}
+      client_hidden: false
+      name: subject
+      type: string
+    - admin_ui: {order: 4, width: 200}
+      client_hidden: false
+      name: body_html
+      type: string
+    - admin_ui: {order: 5, width: 200}
+      client_hidden: false
+      name: body_text
+      type: string
+    - admin_ui: {order: 6, width: 200}
+      client_hidden: false
+      name: template_type
+      type: string
+    - admin_ui: {order: 7, width: 200}
+      client_hidden: false
+      name: is_active
+      type: string
+    indexes: []
+    server: full
+    title: email_templates
   files:
     client: none
     columns:
@@ -555,6 +717,69 @@ db_schema:
     indexes: []
     server: full
     title: files
+  invoice:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: invoice_id
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: invoice_number
+      type: string
+    - admin_ui: {order: 2, width: 200}
+      client_hidden: false
+      name: contact_id
+      target: contacts
+      type: link_single
+    - admin_ui: {order: 3, width: 200}
+      client_hidden: false
+      name: invoice_date
+      type: datetime
+    - admin_ui: {order: 4, width: 200}
+      client_hidden: false
+      name: due_date
+      type: datetime
+    - admin_ui: {order: 5, width: 200}
+      client_hidden: false
+      name: total_amount
+      type: number
+    - admin_ui: {order: 6, width: 200}
+      client_hidden: false
+      name: currency
+      type: string
+    - admin_ui: {order: 7, width: 200}
+      client_hidden: false
+      name: paid_at
+      type: datetime
+    - admin_ui: {order: 8, width: 200}
+      client_hidden: false
+      name: status
+      type: string
+    - admin_ui: {order: 9, width: 200}
+      client_hidden: false
+      name: payment_method
+      type: string
+    - admin_ui: {order: 10, width: 200}
+      client_hidden: false
+      name: payment_id
+      type: string
+    - admin_ui: {order: 11, width: 200}
+      client_hidden: false
+      name: pdf_url
+      type: string
+    - admin_ui: {order: 12, width: 200}
+      client_hidden: false
+      name: notes
+      type: string
+    - admin_ui: {order: 13, width: 200}
+      client_hidden: false
+      name: created_at
+      type: datetime
+    indexes: []
+    server: full
+    title: invoice
   landing_pages:
     client: none
     columns:
@@ -615,6 +840,53 @@ db_schema:
     indexes: []
     server: full
     title: landing_pages
+  lead_captures:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: capture_id
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: instance_id
+      target: users
+      type: link_single
+    - admin_ui: {order: 2, width: 200}
+      client_hidden: false
+      name: capture_name
+      type: string
+    - admin_ui: {order: 3, width: 200}
+      client_hidden: false
+      name: capture_type
+      type: string
+    - admin_ui: {order: 4, width: 200}
+      client_hidden: false
+      name: trigger_settings
+      type: simpleObject
+    - admin_ui: {order: 5, width: 200}
+      client_hidden: false
+      name: form_fields
+      type: simpleObject
+    - admin_ui: {order: 6, width: 200}
+      client_hidden: false
+      name: offer_text
+      type: string
+    - admin_ui: {order: 7, width: 200}
+      client_hidden: false
+      name: status
+      type: string
+    - admin_ui: {order: 8, width: 200}
+      client_hidden: false
+      name: captures_count
+      type: number
+    - admin_ui: {order: 9, width: 200}
+      client_hidden: false
+      name: conversions_count
+      type: number
+    indexes: []
+    server: full
+    title: lead_captures
   leads:
     client: none
     columns:
@@ -648,6 +920,24 @@ db_schema:
       name: landing_page_id
       target: landing_pages
       type: link_single
+    - admin_ui: {order: 7, width: 200}
+      client_hidden: false
+      name: capture_id
+      target: lead_captures
+      type: link_single
+    - admin_ui: {order: 8, width: 200}
+      client_hidden: false
+      name: converted_to_contact_id
+      target: contacts
+      type: link_single
+    - admin_ui: {order: 9, width: 200}
+      client_hidden: false
+      name: status
+      type: string
+    - admin_ui: {order: 10, width: 200}
+      client_hidden: false
+      name: captured_at
+      type: datetime
     indexes: []
     server: full
     title: leads
@@ -1018,6 +1308,44 @@ db_schema:
     indexes: []
     server: full
     title: vault
+  webhook_log:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: gateway
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: event_type
+      type: string
+    - admin_ui: {order: 2, width: 200}
+      client_hidden: false
+      name: payload
+      type: simpleObject
+    - admin_ui: {order: 3, width: 200}
+      client_hidden: false
+      name: signature
+      type: string
+    - admin_ui: {order: 4, width: 200}
+      client_hidden: false
+      name: verified
+      type: bool
+    - admin_ui: {order: 5, width: 200}
+      client_hidden: false
+      name: processed
+      type: bool
+    - admin_ui: {order: 6, width: 200}
+      client_hidden: false
+      name: error_message
+      type: string
+    - admin_ui: {order: 7, width: 200}
+      client_hidden: false
+      name: received_at
+      type: datetime
+    indexes: []
+    server: full
+    title: webhook_log
 dependencies:
 - dep_id: dep_dapp798jbsn8mq
   resolution_hints: {app_id: 4UK6WHQ6UX7AKELK, name: Material 3 Theme, package_name: m3}
