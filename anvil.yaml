@@ -307,6 +307,10 @@ db_schema:
       client_hidden: false
       name: updated_at
       type: datetime
+    - admin_ui: {order: 19, width: 200}
+      client_hidden: false
+      name: system_currency
+      type: string
     indexes: []
     server: full
     title: business_profile
@@ -1138,6 +1142,10 @@ db_schema:
       client_hidden: false
       name: created_at
       type: datetime
+    - admin_ui: {order: 13, width: 200}
+      client_hidden: false
+      name: display_currency
+      type: string
     indexes: []
     server: full
     title: services

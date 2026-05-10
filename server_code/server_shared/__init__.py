@@ -1,5 +1,18 @@
 import anvil.server
+# Mybizz CS — Server Shared Package
+# Phase 0 Implementation
 
+from .exceptions import (
+VaultError,
+VaultSecretNotFoundError,
+VaultDecryptionError,
+)
+
+__all__ = [
+  "VaultError",
+  "VaultSecretNotFoundError",
+  "VaultDecryptionError",
+]
 # This is a server package. It runs on the Anvil server,
 # rather than in the user's browser.
 #
