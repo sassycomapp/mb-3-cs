@@ -1362,6 +1362,9 @@ dependencies:
   resolution_hints: {app_id: 3PIDO5P3H4VPEMPL, name: routing, package_name: routing}
   version: {version_tag: v0.6.1}
 name: mb-3-cs
+native_deps:
+  head_html: |
+    <script type="module" src="https://unpkg.com/@material/web@latest/all.js"></script>
 package_name: mb_3_cs
 renamed: true
 runtime_options:
