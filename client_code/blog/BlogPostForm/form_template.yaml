@@ -1,5 +1,48 @@
 components:
-- layout_properties: {slot: default}
+- components:
+  - components:
+    - layout_properties: {grid_position: 'YHBCBA,ZCQCFC'}
+      name: hdg_post_title
+      properties: {text: Post Title}
+      type: form:dep_dapp798jbsn8mq:_Components.Heading
+    - components:
+      - layout_properties: {grid_position: 'OYTFKF,BQMGMK'}
+        name: txt_author
+        properties: {text: Auhor}
+        type: form:dep_dapp798jbsn8mq:_Components.Text
+      - layout_properties: {grid_position: 'OYTFKF,ILGDTB'}
+        name: txt_published_date
+        properties: {text: Publish Date}
+        type: form:dep_dapp798jbsn8mq:_Components.Text
+      - layout_properties: {grid_position: 'OYTFKF,RBKALU'}
+        name: txt_view_count
+        properties: {text: View count}
+        type: form:dep_dapp798jbsn8mq:_Components.Text
+      layout_properties: {grid_position: 'NGXIIQ,TVUTIK'}
+      name: col_publish
+      properties: {}
+      type: ColumnPanel
+    layout_properties: {grid_position: 'RNPZQZ,ZPSTFZ'}
+    name: col_post_viewer
+    properties: {}
+    type: ColumnPanel
+  - layout_properties: {grid_position: 'IXJGHX,WHMRFK'}
+    name: img_featured_image
+    properties: {}
+    type: Image
+  - layout_properties: {grid_position: 'SQEKJH,JXCHRK'}
+    name: txt_post_content
+    properties: {placeholder: Post Content}
+    type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextArea
+  - layout_properties: {grid_position: 'IKUHMO,OFCVOD'}
+    name: txt_section_categories
+    properties: {text: Categories}
+    type: form:dep_dapp798jbsn8mq:_Components.Heading
+  - layout_properties: {grid_position: 'GFSIZX,PATVOQ'}
+    name: text_1
+    properties: {}
+    type: form:dep_dapp798jbsn8mq:_Components.Text
+  layout_properties: {slot: default}
   name: content_panel
   properties: {}
   type: ColumnPanel

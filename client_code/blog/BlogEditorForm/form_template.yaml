@@ -1,41 +1,71 @@
 components:
 - components:
-  - layout_properties: {grid_position: 'DXUHOY,ZMIXCK'}
+  - components:
+    - layout_properties: {grid_position: 'VUYZFD,ACOTCY'}
+      name: txt_post_details
+      properties: {text: Post details}
+      type: form:dep_dapp798jbsn8mq:_Components.Heading
+    - layout_properties: {grid_position: 'YJPIZY,TREKKV'}
+      name: txt_title
+      properties: {text: Title}
+      type: form:dep_dapp798jbsn8mq:_Components.Text
+    - layout_properties: {grid_position: 'TWQREU,CKAJAL'}
+      name: txt_slug
+      properties: {text: Slug}
+      type: form:dep_dapp798jbsn8mq:_Components.Text
+    - layout_properties: {grid_position: 'JNRKXI,BWDVJB'}
+      name: dd_category
+      properties: {placeholder: Category}
+      type: form:dep_dapp798jbsn8mq:_Components.DropdownMenu
+    - layout_properties: {grid_position: 'GTZAHB,FTNFBR'}
+      name: txt_content
+      properties: {placeholder: Content}
+      type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextArea
+    - layout_properties: {grid_position: 'TMMOWF,TKEPZS'}
+      name: txt_section_seo
+      properties: {text: SEO Settings}
+      type: form:dep_dapp798jbsn8mq:_Components.Heading
+    - layout_properties: {grid_position: 'SMAKOG,XKWNMJ'}
+      name: txt_meta_title
+      properties: {text: Meta title}
+      type: form:dep_dapp798jbsn8mq:_Components.Text
+    - layout_properties: {grid_position: 'EKQMUG,RVYWOU'}
+      name: txt_meta_description
+      properties: {text: Meta description}
+      type: form:dep_dapp798jbsn8mq:_Components.Text
+    - layout_properties: {grid_position: 'SHQOCV,OXQOOO'}
+      name: txt_section_image
+      properties: {text: Featured Image}
+      type: form:dep_dapp798jbsn8mq:_Components.Heading
+    - layout_properties: {grid_position: 'BFMEHJ,YBQCSU'}
+      name: fu_featured_image
+      properties: {}
+      type: form:dep_dapp798jbsn8mq:_Components.FileLoader
+    - layout_properties: {grid_position: 'JQQOLU,VTNXYZ'}
+      name: img_featured_image
+      properties: {}
+      type: Image
+    - components:
+      - layout_properties: {grid_position: 'QDMNSF,IMPXPH'}
+        name: btn_cancel
+        properties: {text: Cancel}
+        type: form:dep_dapp798jbsn8mq:_Components.Button
+      - layout_properties: {grid_position: 'QDMNSF,FDUZNG'}
+        name: cb_publish
+        properties: {text: Publish Immediately}
+        type: form:dep_dapp798jbsn8mq:_Components.Checkbox
+      - layout_properties: {grid_position: 'QDMNSF,TDYXXZ'}
+        name: btn_save
+        properties: {text: Save}
+        type: form:dep_dapp798jbsn8mq:_Components.Button
+      layout_properties: {grid_position: 'MJYDRW,PIXIKX'}
+      name: col_actions
+      properties: {}
+      type: ColumnPanel
+    layout_properties: {grid_position: 'DXUHOY,ZMIXCK'}
     name: col_blog_editor
     properties: {}
     type: ColumnPanel
-  - layout_properties: {grid_position: 'DVRSCE,UZDQPZ'}
-    name: txt_post_details
-    properties: {text: Post details}
-    type: form:dep_dapp798jbsn8mq:_Components.Heading
-  - layout_properties: {grid_position: 'WLGACI,KBRKOM'}
-    name: txt_title
-    properties: {text: Title}
-    type: form:dep_dapp798jbsn8mq:_Components.Text
-  - layout_properties: {grid_position: 'ARKUTD,DSZXCY'}
-    name: txt_slug
-    properties: {text: Slug}
-    type: form:dep_dapp798jbsn8mq:_Components.Text
-  - layout_properties: {grid_position: 'VIGIHE,TKFNIY'}
-    name: dd_category
-    properties: {placeholder: Category}
-    type: form:dep_dapp798jbsn8mq:_Components.DropdownMenu
-  - layout_properties: {grid_position: 'DMXJZZ,CSGVUQ'}
-    name: txt_content
-    properties: {placeholder: Content}
-    type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextArea
-  - layout_properties: {grid_position: 'LPMGNR,WBGJVQ'}
-    name: heading_2
-    properties: {}
-    type: form:dep_dapp798jbsn8mq:_Components.Heading
-  - layout_properties: {grid_position: 'JQKYKD,DYPWWP'}
-    name: text_4
-    properties: {}
-    type: form:dep_dapp798jbsn8mq:_Components.Text
-  - layout_properties: {grid_position: 'VJGIZR,DXBTVC'}
-    name: text_5
-    properties: {}
-    type: form:dep_dapp798jbsn8mq:_Components.Text
   layout_properties: {slot: default}
   name: content_panel
   properties: {}
