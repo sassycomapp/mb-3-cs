@@ -39,9 +39,33 @@ components:
     properties: {text: Categories}
     type: form:dep_dapp798jbsn8mq:_Components.Heading
   - layout_properties: {grid_position: 'GFSIZX,PATVOQ'}
-    name: text_1
+    name: txt_category_1
     properties: {}
     type: form:dep_dapp798jbsn8mq:_Components.Text
+  - layout_properties: {grid_position: 'GFSIZX,MIZDLY'}
+    name: txt_category_2
+    properties: {}
+    type: form:dep_dapp798jbsn8mq:_Components.Text
+  - layout_properties: {grid_position: 'XJBLMM,YBGCAK'}
+    name: hdg_related_title
+    properties: {text: Related Posts}
+    type: form:dep_dapp798jbsn8mq:_Components.Heading
+  - layout_properties: {grid_position: 'ZHVXMW,YIXEYZ'}
+    name: txt_post_1_title
+    properties: {text: Post 1 Title}
+    type: form:dep_dapp798jbsn8mq:_Components.Text
+  - layout_properties: {grid_position: 'GSJWJM,QSAIMK'}
+    name: lnk_related_1
+    properties: {}
+    type: form:dep_dapp798jbsn8mq:_Components.Link
+  - layout_properties: {grid_position: 'UURAUI,SUDFGZ'}
+    name: txt_post_2_title
+    properties: {text: Post 2 Title}
+    type: form:dep_dapp798jbsn8mq:_Components.Text
+  - layout_properties: {grid_position: 'UTVNAF,HQJNXJ'}
+    name: lnk_related_2
+    properties: {}
+    type: form:dep_dapp798jbsn8mq:_Components.Link
   layout_properties: {slot: default}
   name: content_panel
   properties: {}
