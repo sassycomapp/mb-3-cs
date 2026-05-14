@@ -1,18 +1,5 @@
 components:
-- components:
-  - components:
-    - layout_properties: {grid_position: 'GLJCUN,GOKKYK'}
-      name: dd_period_selector
-      properties: {}
-      type: form:dep_dapp798jbsn8mq:_Components.DropdownMenu
-    - layout_properties: {grid_position: 'WHNBOB,WZFXWI'}
-      name: lp_period_selector
-      properties: {}
-      type: LinearPanel
-    layout_properties: {grid_position: 'RZVMKC,GGGSKI'}
-    name: col_analytics
-    properties: {}
-    type: ColumnPanel
+- components: []
   layout_properties: {slot: default}
   name: content_panel
   properties: {}
