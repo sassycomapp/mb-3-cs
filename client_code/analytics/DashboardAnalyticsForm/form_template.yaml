@@ -18,6 +18,35 @@ components:
     name: col_analytics
     properties: {}
     type: ColumnPanel
+  - components:
+    - layout_properties: {grid_position: 'JNPUZA,SNCKFY WIWGWM,HJBKSK'}
+      name: hdg_revenue
+      properties: {}
+      type: form:dep_dapp798jbsn8mq:_Components.Heading
+    - layout_properties: {grid_position: 'JNPUZA,SNCKFY YHPMOX,PMXUUE'}
+      name: txt_revenue
+      properties: {}
+      type: form:dep_dapp798jbsn8mq:_Components.Text
+    - layout_properties: {grid_position: 'JNPUZA,XMKSSZ XRNQEF,ZBTPNA'}
+      name: hdg_bookings
+      properties: {}
+      type: form:dep_dapp798jbsn8mq:_Components.Heading
+    - layout_properties: {grid_position: 'JNPUZA,XMKSSZ LRPTYC,DRBRTI'}
+      name: lbl_bookings
+      properties: {}
+      type: form:dep_dapp798jbsn8mq:_Components.Text
+    - layout_properties: {grid_position: 'JNPUZA,PWWBOY YITQQX,XVCJLG'}
+      name: hdg_customers
+      properties: {}
+      type: form:dep_dapp798jbsn8mq:_Components.Heading
+    - layout_properties: {grid_position: 'JNPUZA,PWWBOY SWPJUN,BPUWVB'}
+      name: lbl_customers
+      properties: {}
+      type: form:dep_dapp798jbsn8mq:_Components.Text
+    layout_properties: {grid_position: 'VRIEAE,JAMQDQ'}
+    name: col_display
+    properties: {}
+    type: ColumnPanel
   layout_properties: {slot: default}
   name: content_panel
   properties: {}
