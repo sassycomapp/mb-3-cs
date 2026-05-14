@@ -1,5 +1,49 @@
 components:
-- layout_properties: {slot: default}
+- components:
+  - components:
+    - layout_properties: {grid_position: 'VIMAQQ,CMFJDJ'}
+      name: hdg_blog_posts_list
+      properties: {text: Blog Posts List}
+      type: form:dep_dapp798jbsn8mq:_Components.Heading
+    - components:
+      - layout_properties: {grid_position: 'KLXIMY,GGZXEL'}
+        name: txt_search
+        properties: {text: Text search}
+        type: form:dep_dapp798jbsn8mq:_Components.Text
+      - layout_properties: {grid_position: 'KLXIMY,KDNFSM'}
+        name: dd_category
+        properties: {}
+        type: form:dep_dapp798jbsn8mq:_Components.DropdownMenu
+      - layout_properties: {grid_position: 'KLXIMY,RGLWHE'}
+        name: dd_status
+        properties: {}
+        type: form:dep_dapp798jbsn8mq:_Components.DropdownMenu
+      layout_properties: {grid_position: 'LEKZXI,KBMKDS'}
+      name: col_search_filters
+      properties: {}
+      type: ColumnPanel
+    - components:
+      - name: repeating_panel_1
+        properties: {item_template: blog.BlogListForm.RowTemplate2}
+        type: RepeatingPanel
+      layout_properties: {grid_position: 'JJFCAA,JEZUDI'}
+      name: dg_posts
+      properties: {}
+      type: DataGrid
+    - components:
+      - layout_properties: {grid_position: 'WVVDYJ,TCRLGW'}
+        name: btn_create_post
+        properties: {text: Create post}
+        type: form:dep_dapp798jbsn8mq:_Components.Button
+      layout_properties: {grid_position: 'MDXPRS,INTXJB'}
+      name: col_actions
+      properties: {}
+      type: ColumnPanel
+    layout_properties: {grid_position: 'ONNQID,QMMIQO'}
+    name: col_content
+    properties: {}
+    type: ColumnPanel
+  layout_properties: {slot: default}
   name: content_panel
   properties: {}
   type: ColumnPanel

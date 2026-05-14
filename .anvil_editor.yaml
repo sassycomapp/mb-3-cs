@@ -12,6 +12,7 @@ unique_ids:
     auth.SignupForm: '1778321775101472836047380.5133'
     blog.BlogEditorForm: '177832305194372957959730.02116'
     blog.BlogListForm: '1778323022815480776471213.5345'
+    blog.BlogListForm.RowTemplate2: '1778761781670229010970079.9472'
     blog.BlogPostForm: '1778323037951988265776592.7183'
     blog.CategoryManagementForm: '1778323067026856289610539.4166'
     bookings.AvailabilitySettingsForm: '1778322751611593035891969.4341'
