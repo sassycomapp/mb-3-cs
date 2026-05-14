@@ -5,25 +5,25 @@ components:
     properties: {}
     type: ColumnPanel
   - layout_properties: {grid_position: 'DVRSCE,UZDQPZ'}
-    name: heading_1
-    properties: {}
+    name: txt_post_details
+    properties: {text: Post details}
     type: form:dep_dapp798jbsn8mq:_Components.Heading
   - layout_properties: {grid_position: 'WLGACI,KBRKOM'}
-    name: text_1
-    properties: {}
+    name: txt_title
+    properties: {text: Title}
     type: form:dep_dapp798jbsn8mq:_Components.Text
   - layout_properties: {grid_position: 'ARKUTD,DSZXCY'}
-    name: text_2
-    properties: {}
+    name: txt_slug
+    properties: {text: Slug}
     type: form:dep_dapp798jbsn8mq:_Components.Text
   - layout_properties: {grid_position: 'VIGIHE,TKFNIY'}
-    name: dropdown_menu_1
-    properties: {}
+    name: dd_category
+    properties: {placeholder: Category}
     type: form:dep_dapp798jbsn8mq:_Components.DropdownMenu
-  - layout_properties: {grid_position: 'QOJODX,MXHLEW'}
-    name: text_3
-    properties: {}
-    type: form:dep_dapp798jbsn8mq:_Components.Text
+  - layout_properties: {grid_position: 'DMXJZZ,CSGVUQ'}
+    name: txt_content
+    properties: {placeholder: Content}
+    type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextArea
   - layout_properties: {grid_position: 'LPMGNR,WBGJVQ'}
     name: heading_2
     properties: {}
