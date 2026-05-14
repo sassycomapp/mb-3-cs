@@ -21,30 +21,68 @@ components:
   - components:
     - layout_properties: {grid_position: 'JNPUZA,SNCKFY WIWGWM,HJBKSK'}
       name: hdg_revenue
-      properties: {}
+      properties: {text: Revenue}
       type: form:dep_dapp798jbsn8mq:_Components.Heading
     - layout_properties: {grid_position: 'JNPUZA,SNCKFY YHPMOX,PMXUUE'}
       name: txt_revenue
       properties: {}
       type: form:dep_dapp798jbsn8mq:_Components.Text
+    - layout_properties: {grid_position: 'JNPUZA,SNCKFY MFOTXQ,AGPDLF'}
+      name: txt_revenue_change
+      properties: {}
+      type: form:dep_dapp798jbsn8mq:_Components.Text
     - layout_properties: {grid_position: 'JNPUZA,XMKSSZ XRNQEF,ZBTPNA'}
       name: hdg_bookings
-      properties: {}
+      properties: {text: Bookings}
       type: form:dep_dapp798jbsn8mq:_Components.Heading
     - layout_properties: {grid_position: 'JNPUZA,XMKSSZ LRPTYC,DRBRTI'}
-      name: lbl_bookings
+      name: txt_bookings
+      properties: {}
+      type: form:dep_dapp798jbsn8mq:_Components.Text
+    - layout_properties: {grid_position: 'JNPUZA,XMKSSZ ZOHZFA,ZXDTMK'}
+      name: txt_bookings_change
       properties: {}
       type: form:dep_dapp798jbsn8mq:_Components.Text
     - layout_properties: {grid_position: 'JNPUZA,PWWBOY YITQQX,XVCJLG'}
       name: hdg_customers
-      properties: {}
+      properties: {text: Customers}
       type: form:dep_dapp798jbsn8mq:_Components.Heading
     - layout_properties: {grid_position: 'JNPUZA,PWWBOY SWPJUN,BPUWVB'}
-      name: lbl_customers
+      name: txt_customers
+      properties: {}
+      type: form:dep_dapp798jbsn8mq:_Components.Text
+    - layout_properties: {grid_position: 'JNPUZA,PWWBOY QSCHTO,KBQMGG'}
+      name: txt_customers_change
       properties: {}
       type: form:dep_dapp798jbsn8mq:_Components.Text
     layout_properties: {grid_position: 'VRIEAE,JAMQDQ'}
     name: col_display
+    properties: {}
+    type: ColumnPanel
+  - components:
+    - layout_properties: {grid_position: 'TAEWVH,LEQIRP'}
+      name: hdg_revenue_chart_title
+      properties: {}
+      type: form:dep_dapp798jbsn8mq:_Components.Heading
+    - layout_properties: {grid_position: 'LLASEK,FKLNZD'}
+      name: plot_revenue_trend
+      properties: {}
+      type: Plot
+    layout_properties: {grid_position: 'PGEPCD,ZKCVEC'}
+    name: col_revenue_trend
+    properties: {}
+    type: ColumnPanel
+  - components:
+    - layout_properties: {grid_position: 'OTSAAW,BOGLMG'}
+      name: hdg_bookings_chart_title
+      properties: {}
+      type: form:dep_dapp798jbsn8mq:_Components.Heading
+    - layout_properties: {grid_position: 'JNDVPU,QGNKLW'}
+      name: plot_bookings_trend
+      properties: {}
+      type: Plot
+    layout_properties: {grid_position: 'FGIAAL,ZIGLON'}
+    name: col_bookings
     properties: {}
     type: ColumnPanel
   layout_properties: {slot: default}
