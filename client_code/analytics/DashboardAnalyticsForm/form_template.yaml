@@ -11,16 +11,11 @@ components:
         properties: {}
         type: form:dep_dapp798jbsn8mq:_Components.DropdownMenu
       layout_properties: {grid_position: 'ECPFBD,KTQNYH'}
-      name: column_panel_2
+      name: col_period_selector
       properties: {}
       type: ColumnPanel
-    - components: []
-      layout_properties: {grid_position: 'OWYGJM,YGMOXM'}
-      name: lp_period_selector
-      properties: {}
-      type: LinearPanel
     layout_properties: {grid_position: 'GXQWWX,IWYPPD'}
-    name: column_panel_1
+    name: col_analytics
     properties: {}
     type: ColumnPanel
   layout_properties: {slot: default}
