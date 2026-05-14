@@ -1363,8 +1363,8 @@ dependencies:
   version: {version_tag: v0.6.1}
 name: mb-3-cs
 native_deps:
-  head_html: |
-    <script type="module" src="https://unpkg.com/@material/web@latest/all.js"></script>
+  head_html: |2+
+
 package_name: mb_3_cs
 renamed: true
 runtime_options:
