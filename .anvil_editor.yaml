@@ -7,6 +7,7 @@ unique_ids:
     analytics.RevenueReportForm: '1778323307916193844831264.62772'
     analytics.RevenueReportForm.RowTemplate1: '1778757118596327393707580.19904'
     auth.LoginForm: '1778321756037482981497892.5816'
+    auth.PasswordResetCompleteForm: '1778760463612412738961758.70795'
     auth.PasswordResetForm: '177832180507931803216976.301952'
     auth.SignupForm: '1778321775101472836047380.5133'
     blog.BlogEditorForm: '177832305194372957959730.02116'
