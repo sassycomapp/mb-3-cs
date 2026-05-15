@@ -58,6 +58,7 @@ unique_ids:
     settings.ThemeConfigForm: '1778321997250515326782289.34705'
     settings.UserManagementForm: '1778322020626277084937255.14636'
     settings.VaultForm: '1778321918453813236358863.3507'
+    shared.CalendarComponentForm: '1778848853155748385151259.9508'
     shared.formatting_utils: '1778323488746865021813722.3352'
     shared.navigation_helpers: '177832334025942641803048.74765'
     shared.validation_utils: '1778323466914134789635950.78009'
