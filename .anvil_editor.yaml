@@ -20,6 +20,7 @@ unique_ids:
     bookings.BookingCalendarForm: '1778322433949291259304635.57404'
     bookings.BookingEditorForm: '1778322717435518082103148.7722'
     bookings.BookingListForm: '177832270292279516602804.87616'
+    bookings.BookingListForm.RowTemplate4: '1778836540792467607983619.124'
     bookings.BookingViewerForm: '1778322731583187705156413.49194'
     bookings.TimeEntriesForm: '1778322767040710998038083.4827'
     crm.ContactEditorForm: '177832281374910878132524.969719'

@@ -1,5 +1,49 @@
 components:
-- layout_properties: {slot: default}
+- components:
+  - components:
+    - layout_properties: {grid_position: 'XEQSKJ,PYTLKB'}
+      name: hdg_booking_list
+      properties: {text: Booking List}
+      type: form:dep_dapp798jbsn8mq:_Components.Heading
+    - components:
+      - layout_properties: {grid_position: 'UTZFHR,GZWLMG'}
+        name: txt_search
+        properties: {}
+        type: form:dep_dapp798jbsn8mq:_Components.Text
+      - layout_properties: {grid_position: 'UTZFHR,MRTGCV'}
+        name: dd_status
+        properties: {}
+        type: form:dep_dapp798jbsn8mq:_Components.DropdownMenu
+      - layout_properties: {grid_position: 'UTZFHR,MOUHQJ'}
+        name: dd_date_range
+        properties: {}
+        type: form:dep_dapp798jbsn8mq:_Components.DropdownMenu
+      layout_properties: {grid_position: 'KRXGFG,ENDDHM'}
+      name: col_search_filters
+      properties: {}
+      type: ColumnPanel
+    - components:
+      - name: repeating_panel_1
+        properties: {item_template: bookings.BookingListForm.RowTemplate4}
+        type: RepeatingPanel
+      layout_properties: {grid_position: 'WPDDNM,WEOHVI'}
+      name: dg_bookings
+      properties: {}
+      type: DataGrid
+    layout_properties: {grid_position: 'YRBCYZ,UVWQVR'}
+    name: col_content
+    properties: {}
+    type: ColumnPanel
+  - components:
+    - layout_properties: {grid_position: 'BHZYNY,ITLYIU'}
+      name: btn_add_booking
+      properties: {text: + Add Booking}
+      type: form:dep_dapp798jbsn8mq:_Components.Button
+    layout_properties: {grid_position: 'BTWWNP,FITJDR'}
+    name: col_actions
+    properties: {}
+    type: ColumnPanel
+  layout_properties: {slot: default}
   name: content_panel
   properties: {}
   type: ColumnPanel
