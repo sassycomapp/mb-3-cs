@@ -1,46 +1,5 @@
 components:
-- components:
-  - components:
-    - layout_properties: {grid_position: 'VLGMJJ,VERXMC'}
-      name: _create_account
-      properties: {text: Create Account}
-      type: form:dep_dapp798jbsn8mq:_Components.Heading
-    - layout_properties: {grid_position: 'PTIVFH,HZXPOQ'}
-      name: txt_business_name
-      properties: {text: Business name}
-      type: form:dep_dapp798jbsn8mq:_Components.Text
-    - layout_properties: {grid_position: 'YLKEWJ,LILHSF'}
-      name: txt_email
-      properties: {text: Email}
-      type: form:dep_dapp798jbsn8mq:_Components.Text
-    - layout_properties: {grid_position: 'LFVVRR,CMQDSL'}
-      name: txt_password
-      properties: {text: Password}
-      type: form:dep_dapp798jbsn8mq:_Components.Text
-    - layout_properties: {grid_position: 'UXKJXX,QIHIEC'}
-      name: txt_confirm_password
-      properties: {text: Confirm Password}
-      type: form:dep_dapp798jbsn8mq:_Components.Text
-    - layout_properties: {grid_position: 'XQBGDO,ETPUVD'}
-      name: cb_agree_terms
-      properties: {text: I agree to the Terms of Service and Privacy Policy}
-      type: form:dep_dapp798jbsn8mq:_Components.Checkbox
-    - layout_properties: {grid_position: 'MXWDNP,XMQAMZ'}
-      name: btn_create_account
-      properties: {text: Create account}
-      type: form:dep_dapp798jbsn8mq:_Components.Button
-    - layout_properties: {grid_position: 'EAMHJZ,MUDNPI'}
-      name: txt_sign_in_prompt
-      properties: {text: 'Already have an account?'}
-      type: form:dep_dapp798jbsn8mq:_Components.Text
-    - layout_properties: {grid_position: 'GDHDSD,HNPBBP'}
-      name: lnk_sign_in
-      properties: {text: Sign in}
-      type: form:dep_dapp798jbsn8mq:_Components.Link
-    layout_properties: {grid_position: 'DDEVMO,OJRJEU'}
-    name: col_signup
-    properties: {}
-    type: ColumnPanel
+- components: []
   layout_properties: {slot: default}
   name: content_panel
   properties: {}
