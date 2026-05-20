@@ -1,10 +1,5 @@
 components:
-- components:
-  - components: []
-    layout_properties: {grid_position: 'NQPTLJ,HFPYHS'}
-    name: col_reset_complete
-    properties: {}
-    type: ColumnPanel
+- components: []
   layout_properties: {slot: default}
   name: content_panel
   properties: {}
