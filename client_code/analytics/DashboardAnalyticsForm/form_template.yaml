@@ -1,36 +1,5 @@
 components:
-- components:
-  - components: []
-    layout_properties: {grid_position: 'VRIEAE,JAMQDQ'}
-    name: col_display
-    properties: {}
-    type: ColumnPanel
-  - components:
-    - layout_properties: {grid_position: 'TAEWVH,LEQIRP'}
-      name: hdg_revenue_chart_title
-      properties: {}
-      type: form:dep_dapp798jbsn8mq:_Components.Heading
-    - layout_properties: {grid_position: 'LLASEK,FKLNZD'}
-      name: plot_revenue_trend
-      properties: {}
-      type: Plot
-    layout_properties: {grid_position: 'PGEPCD,ZKCVEC'}
-    name: col_revenue_trend
-    properties: {}
-    type: ColumnPanel
-  - components:
-    - layout_properties: {grid_position: 'OTSAAW,BOGLMG'}
-      name: hdg_bookings_chart_title
-      properties: {}
-      type: form:dep_dapp798jbsn8mq:_Components.Heading
-    - layout_properties: {grid_position: 'JNDVPU,QGNKLW'}
-      name: plot_bookings_trend
-      properties: {}
-      type: Plot
-    layout_properties: {grid_position: 'FGIAAL,ZIGLON'}
-    name: col_bookings
-    properties: {}
-    type: ColumnPanel
+- components: []
   layout_properties: {slot: default}
   name: content_panel
   properties: {}
