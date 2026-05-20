@@ -1,10 +1,6 @@
 components:
 - components:
   - components:
-    - layout_properties: {grid_position: 'CZFAHE,HDKQKD'}
-      name: heading_1
-      properties: {text: Welcome back}
-      type: form:dep_dapp798jbsn8mq:_Components.Heading
     - layout_properties: {grid_position: 'JMLDPS,YRZUCK'}
       name: txt_email
       properties: {text: Email}
