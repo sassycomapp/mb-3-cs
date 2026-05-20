@@ -1,28 +1,10 @@
 components:
 - components:
-  - components:
-    - layout_properties: {grid_position: 'SKIKKE,HVAYTW'}
-      name: txt_set_new_password_title
-      properties:
-        text: |
-          Set new password
-      type: form:dep_dapp798jbsn8mq:_Components.Heading
+  - components: []
     layout_properties: {grid_position: 'NQPTLJ,HFPYHS'}
     name: col_reset_complete
     properties: {}
     type: ColumnPanel
-  - layout_properties: {grid_position: 'KXOZAW,KRSFKW'}
-    name: txt_new_password
-    properties: {text: Enter new password}
-    type: form:dep_dapp798jbsn8mq:_Components.Text
-  - layout_properties: {grid_position: 'MBCOQQ,VGNCRW'}
-    name: text_1
-    properties: {text: Confirm new password}
-    type: form:dep_dapp798jbsn8mq:_Components.Text
-  - layout_properties: {grid_position: 'BCIHAS,KUQLDS'}
-    name: btn_reset_password
-    properties: {text: Rest password}
-    type: form:dep_dapp798jbsn8mq:_Components.Button
   layout_properties: {slot: default}
   name: content_panel
   properties: {}
