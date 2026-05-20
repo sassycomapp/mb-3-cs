@@ -1,27 +1,5 @@
 components:
-- components:
-  - components:
-    - components:
-      - name: repeating_panel_1
-        properties: {item_template: blog.CategoryManagementForm.RowTemplate3}
-        type: RepeatingPanel
-      layout_properties: {grid_position: 'XODDEM,BWAMRR'}
-      name: dg_categories
-      properties: {}
-      type: DataGrid
-    - components:
-      - layout_properties: {grid_position: 'NZIZVG,NREAVM'}
-        name: btn_add_category
-        properties: {text: + Add Category}
-        type: form:dep_dapp798jbsn8mq:_Components.Button
-      layout_properties: {grid_position: 'UJKVVF,RBSOHQ'}
-      name: col_actions
-      properties: {}
-      type: ColumnPanel
-    layout_properties: {grid_position: 'QVHLYC,AUTEWW'}
-    name: col_categories
-    properties: {}
-    type: ColumnPanel
+- components: []
   layout_properties: {slot: default}
   name: content_panel
   properties: {}

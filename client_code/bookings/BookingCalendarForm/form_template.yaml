@@ -1,10 +1,6 @@
 components:
 - components:
-  - components:
-    - layout_properties: {grid_position: 'HGAWES,DAOVBO'}
-      name: l_calendar_title
-      properties: {text: Calendar}
-      type: form:dep_dapp798jbsn8mq:_Components.Heading
+  - components: []
     layout_properties: {grid_position: 'PFRLTT,YMIXCH'}
     name: col_calendar
     properties: {}
