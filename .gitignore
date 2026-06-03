@@ -2,3 +2,8 @@
 *.pyo
 __pycache__
 .anvil-data
+.opencode/
+agents.md
+opencode.json
+pytest.ini
+tests/
