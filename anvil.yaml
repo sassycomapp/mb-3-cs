@@ -371,6 +371,58 @@ db_schema:
       client_hidden: false
       name: palette
       type: string
+    - admin_ui: {order: 25, width: 200}
+      client_hidden: false
+      name: legal_compliance_enabled
+      type: bool
+    - admin_ui: {order: 26, width: 200}
+      client_hidden: false
+      name: legal_compliance_enabled_at
+      type: datetime
+    - admin_ui: {order: 27, width: 200}
+      client_hidden: false
+      name: legal_ack_accepted
+      type: bool
+    - admin_ui: {order: 28, width: 200}
+      client_hidden: false
+      name: legal_ack_accepted_at
+      type: datetime
+    - admin_ui: {order: 29, width: 200}
+      client_hidden: false
+      name: data_governance_ack_accepted
+      type: bool
+    - admin_ui: {order: 30, width: 200}
+      client_hidden: false
+      name: data_governance_ack_accepted_at
+      type: datetime
+    - admin_ui: {order: 31, width: 200}
+      client_hidden: false
+      name: palette_updated_at
+      type: datetime
+    - admin_ui: {order: 32, width: 200}
+      client_hidden: false
+      name: blog_list_view
+      type: string
+    - admin_ui: {order: 32, width: 200}
+      client_hidden: false
+      name: enable_comments
+      type: bool
+    - admin_ui: {order: 33, width: 200}
+      client_hidden: false
+      name: homepage_template
+      type: string
+    - admin_ui: {order: 34, width: 200}
+      client_hidden: false
+      name: business_logo
+      type: media
+    - admin_ui: {order: 35, width: 200}
+      client_hidden: false
+      name: accreditations
+      type: string
+    - admin_ui: {order: 36, width: 200}
+      client_hidden: false
+      name: google_maps_embed_url
+      type: string
     indexes: []
     server: full
     title: business_profile
