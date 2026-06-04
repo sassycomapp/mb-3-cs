@@ -1382,7 +1382,67 @@ db_schema:
     title: theme_config
   time_entries:
     client: none
-    columns: []
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: entry_id
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: contact_id
+      target: contacts
+      type: link_single
+    - admin_ui: {order: 2, width: 200}
+      client_hidden: false
+      name: staff_id
+      target: users
+      type: link_single
+    - admin_ui: {order: 3, width: 200}
+      client_hidden: false
+      name: service_id
+      target: services
+      type: link_single
+    - admin_ui: {order: 4, width: 200}
+      client_hidden: false
+      name: booking_id
+      target: bookings
+      type: link_single
+    - admin_ui: {order: 5, width: 200}
+      client_hidden: false
+      name: start_time
+      type: datetime
+    - admin_ui: {order: 6, width: 200}
+      client_hidden: false
+      name: end_time
+      type: datetime
+    - admin_ui: {order: 7, width: 200}
+      client_hidden: false
+      name: duration_hours
+      type: number
+    - admin_ui: {order: 8, width: 200}
+      client_hidden: false
+      name: hourly_rate
+      type: number
+    - admin_ui: {order: 9, width: 200}
+      client_hidden: false
+      name: total_amount
+      type: number
+    - admin_ui: {order: 10, width: 200}
+      client_hidden: false
+      name: description
+      type: string
+    - admin_ui: {order: 11, width: 200}
+      client_hidden: false
+      name: is_billable
+      type: bool
+    - admin_ui: {order: 12, width: 200}
+      client_hidden: false
+      name: is_invoiced
+      type: bool
+    - admin_ui: {order: 13, width: 200}
+      client_hidden: false
+      name: created_at
+      type: datetime
     indexes: []
     server: full
     title: time_entries
