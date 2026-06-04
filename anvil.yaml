@@ -218,6 +218,26 @@ db_schema:
       client_hidden: false
       name: view_count
       type: number
+    - admin_ui: {order: 14, width: 200}
+      client_hidden: false
+      name: template
+      type: string
+    - admin_ui: {order: 15, width: 200}
+      client_hidden: false
+      name: meta_title
+      type: string
+    - admin_ui: {order: 16, width: 200}
+      client_hidden: false
+      name: meta_description
+      type: string
+    - admin_ui: {order: 17, width: 200}
+      client_hidden: false
+      name: keywords
+      type: string
+    - admin_ui: {order: 18, width: 200}
+      client_hidden: false
+      name: pullquote
+      type: string
     indexes: []
     server: full
     title: blog_posts
