@@ -116,6 +116,46 @@ db_schema:
     indexes: []
     server: full
     title: blog_categories
+  blog_comments:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: instance_id
+      target: users
+      type: link_single
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: post_id
+      target: blog_posts
+      type: link_single
+    - admin_ui: {order: 2, width: 200}
+      client_hidden: false
+      name: commenter_name
+      type: string
+    - admin_ui: {order: 3, width: 200}
+      client_hidden: false
+      name: commenter_email
+      type: string
+    - admin_ui: {order: 4, width: 200}
+      client_hidden: false
+      name: comment
+      type: string
+    - admin_ui: {order: 5, width: 200}
+      client_hidden: false
+      name: status
+      type: string
+    - admin_ui: {order: 6, width: 200}
+      client_hidden: false
+      name: created_at
+      type: datetime
+    - admin_ui: {order: 7, width: 200}
+      client_hidden: false
+      name: updated_at
+      type: datetime
+    indexes: []
+    server: full
+    title: blog_comments
   blog_posts:
     client: none
     columns:
@@ -784,6 +824,33 @@ db_schema:
     indexes: []
     server: full
     title: invoice
+  invoice_items:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: invoice_id
+      target: invoice
+      type: link_single
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: description
+      type: string
+    - admin_ui: {order: 2, width: 200}
+      client_hidden: false
+      name: quantity
+      type: number
+    - admin_ui: {order: 3, width: 200}
+      client_hidden: false
+      name: unit_price
+      type: number
+    - admin_ui: {order: 4, width: 200}
+      client_hidden: false
+      name: amount
+      type: number
+    indexes: []
+    server: full
+    title: invoice_items
   landing_pages:
     client: none
     columns:
@@ -1313,6 +1380,12 @@ db_schema:
     indexes: []
     server: full
     title: theme_config
+  time_entries:
+    client: none
+    columns: []
+    indexes: []
+    server: full
+    title: time_entries
   users:
     client: none
     columns:
