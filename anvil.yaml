@@ -351,6 +351,26 @@ db_schema:
       client_hidden: false
       name: system_currency
       type: string
+    - admin_ui: {order: 20, width: 200}
+      client_hidden: false
+      name: onboarding_status
+      type: string
+    - admin_ui: {order: 21, width: 200}
+      client_hidden: false
+      name: onboarding_completed
+      type: bool
+    - admin_ui: {order: 22, width: 200}
+      client_hidden: false
+      name: onboarding_completed_at
+      type: datetime
+    - admin_ui: {order: 23, width: 200}
+      client_hidden: false
+      name: entity_type
+      type: string
+    - admin_ui: {order: 24, width: 200}
+      client_hidden: false
+      name: palette
+      type: string
     indexes: []
     server: full
     title: business_profile
