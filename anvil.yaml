@@ -1025,6 +1025,37 @@ db_schema:
     indexes: []
     server: full
     title: payment_config
+  privacy_policy:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: instance_id
+      target: users
+      type: link_single
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: category
+      type: string
+    - admin_ui: {order: 2, width: 200}
+      client_hidden: false
+      name: title
+      type: string
+    - admin_ui: {order: 3, width: 200}
+      client_hidden: false
+      name: clause
+      type: string
+    - admin_ui: {order: 4, width: 200}
+      client_hidden: false
+      name: sort_order
+      type: number
+    - admin_ui: {order: 5, width: 200}
+      client_hidden: false
+      name: is_seeded
+      type: bool
+    indexes: []
+    server: full
+    title: privacy_policy
   rate_limits:
     client: none
     columns:
