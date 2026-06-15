@@ -531,7 +531,7 @@ db_schema:
       client_hidden: false
       name: conversions
       type: number
-    - admin_ui: {order: 5, width: 200}
+    - admin_ui: {width: 200}
       client_hidden: false
       name: created_at
       type: datetime
@@ -962,7 +962,7 @@ db_schema:
     - admin_ui: {width: 200}
       client_hidden: false
       name: is_active
-      type: string
+      type: bool
     indexes: []
     server: full
     title: email_templates
@@ -987,24 +987,24 @@ db_schema:
   health_log:
     client: none
     columns:
-    - admin_ui: {order: 0, width: 200}
+    - admin_ui: {width: 200}
       client_hidden: false
       name: instance_id
       target: users
       type: link_single
-    - admin_ui: {order: 1, width: 200}
+    - admin_ui: {width: 200}
       client_hidden: false
       name: timestamp
       type: datetime
-    - admin_ui: {order: 2, width: 200}
+    - admin_ui: {width: 200}
       client_hidden: false
       name: status
       type: string
-    - admin_ui: {order: 3, width: 200}
+    - admin_ui: {width: 200}
       client_hidden: false
       name: metrics
       type: simpleObject
-    - admin_ui: {order: 4, width: 200}
+    - admin_ui: {width: 200}
       client_hidden: false
       name: created_at
       type: datetime
@@ -1665,11 +1665,6 @@ db_schema:
       client_hidden: false
       name: created_at
       type: datetime
-    - admin_ui: {width: 200}
-      client_hidden: false
-      name: instance_id_2
-      target: users
-      type: link_single
     indexes: []
     server: full
     title: tasks
