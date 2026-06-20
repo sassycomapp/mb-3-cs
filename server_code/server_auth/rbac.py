@@ -1,3 +1,4 @@
+import anvil.email
 import anvil.server
 
 # This is a server module. It runs on the Anvil server,

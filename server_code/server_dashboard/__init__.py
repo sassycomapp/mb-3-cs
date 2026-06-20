@@ -1,3 +1,4 @@
+import anvil.email
 import anvil.server
 
 # This is a server package. It runs on the Anvil server,
