@@ -1,5 +1,6 @@
 from ._anvil_designer import DashboardAnalyticsFormTemplate
 from anvil import *
+import anvil.users
 import plotly.graph_objects as go
 import anvil.server
 from routing import router

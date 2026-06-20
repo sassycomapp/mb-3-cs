@@ -1,3 +1,4 @@
+import anvil.users
 import anvil.server
 
 # This is a server module. It runs on the Anvil server,

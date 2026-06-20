@@ -1,3 +1,4 @@
+import anvil.users
 import anvil.server
 from routing import router
 import anvil.tables as tables

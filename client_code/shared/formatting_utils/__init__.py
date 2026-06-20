@@ -1,5 +1,6 @@
 from ._anvil_designer import formatting_utilsTemplate
 from anvil import *
+import anvil.users
 import anvil.server
 from routing import router
 import m3.components as m3
