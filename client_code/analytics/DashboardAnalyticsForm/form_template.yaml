@@ -59,6 +59,37 @@ components:
         name: card_revenue
         properties: {}
         type: form:dep_dapp798jbsn8mq:_Components.Card
+      - components:
+        - components:
+          - layout_properties: {slot: card-content-container-slot}
+            name: hdg_bookings_label
+            properties: {text: Total Bookings}
+            type: form:dep_dapp798jbsn8mq:_Components.Heading
+          - layout_properties: {slot: card-content-container-slot}
+            name: txt_bookings_value
+            properties: {}
+            type: form:dep_dapp798jbsn8mq:_Components.Text
+          - layout_properties: {slot: card-content-container-slot}
+            name: txt_bookings_change
+            properties: {}
+            type: form:dep_dapp798jbsn8mq:_Components.Text
+          layout_properties: {slot: card-content-slot}
+          name: card_content_container_2
+          properties: {}
+          type: form:dep_dapp798jbsn8mq:_Components.Card.CardContentContainer
+        layout_properties: {}
+        name: card_bookings
+        properties: {}
+        type: form:dep_dapp798jbsn8mq:_Components.Card
+      - components:
+        - layout_properties: {slot: card-content-slot}
+          name: card_content_container_3
+          properties: {}
+          type: form:dep_dapp798jbsn8mq:_Components.Card.CardContentContainer
+        layout_properties: {}
+        name: card_1
+        properties: {}
+        type: form:dep_dapp798jbsn8mq:_Components.Card
       layout_properties: {grid_position: 'UFLEAP,IJSVHL'}
       name: flow_metrics_row
       properties: {}
