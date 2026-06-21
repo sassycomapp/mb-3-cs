@@ -1,6 +1,69 @@
 components:
 - components:
-  - layout_properties: {grid_position: 'VDOAJC,JUQRDS'}
+  - components:
+    - layout_properties: {grid_position: 'ZIHNTS,ARYVVU'}
+      name: hdg_analytics_title
+      properties: {text: Analytics}
+      type: form:dep_dapp798jbsn8mq:_Components.Heading
+    - layout_properties: {grid_position: 'QDAVXB,SEYOHU'}
+      name: txt_analytics_subtitle
+      properties:
+        text: |
+          Track your business performance and trends
+      type: form:dep_dapp798jbsn8mq:_Components.Text
+    - components:
+      - layout_properties: {}
+        name: nav_period_week
+        properties:
+          text: |
+            Week
+        type: form:dep_dapp798jbsn8mq:_Components.Link
+      - layout_properties: {}
+        name: nav_period_month
+        properties: {text: Month}
+        type: form:dep_dapp798jbsn8mq:_Components.Link
+      - layout_properties: {}
+        name: nav_period_quarter
+        properties: {text: Quarter}
+        type: form:dep_dapp798jbsn8mq:_Components.Link
+      - layout_properties: {}
+        name: nav_period_custom
+        properties:
+          text: |
+            Custom
+        type: form:dep_dapp798jbsn8mq:_Components.Link
+      layout_properties: {grid_position: 'NRHMAD,DYZYJU'}
+      name: flow_period_selector
+      properties: {}
+      type: FlowPanel
+    - components:
+      - components:
+        - components:
+          - layout_properties: {slot: card-content-container-slot}
+            name: hdg_revenue_label
+            properties: {text: Total Revenue}
+            type: form:dep_dapp798jbsn8mq:_Components.Heading
+          - layout_properties: {slot: card-content-container-slot}
+            name: txt_revenue_value
+            properties: {}
+            type: form:dep_dapp798jbsn8mq:_Components.Text
+          - layout_properties: {slot: card-content-container-slot}
+            name: txt_revenue_change
+            properties: {}
+            type: form:dep_dapp798jbsn8mq:_Components.Text
+          layout_properties: {slot: card-content-slot}
+          name: card_content_container_1
+          properties: {}
+          type: form:dep_dapp798jbsn8mq:_Components.Card.CardContentContainer
+        layout_properties: {}
+        name: card_revenue
+        properties: {}
+        type: form:dep_dapp798jbsn8mq:_Components.Card
+      layout_properties: {grid_position: 'UFLEAP,IJSVHL'}
+      name: flow_metrics_row
+      properties: {}
+      type: FlowPanel
+    layout_properties: {grid_position: 'VDOAJC,JUQRDS'}
     name: col_analytics
     properties: {}
     type: ColumnPanel
