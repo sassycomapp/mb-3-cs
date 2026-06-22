@@ -171,9 +171,13 @@ components:
       - components:
         - components:
           - layout_properties: {slot: card-content-container-slot}
-            name: heading_1
-            properties: {}
+            name: hdg_customer_growth
+            properties: {text: Customer Growth}
             type: form:dep_dapp798jbsn8mq:_Components.Heading
+          - layout_properties: {slot: card-content-container-slot}
+            name: plot_customer_growth
+            properties: {}
+            type: Plot
           layout_properties: {slot: card-content-slot}
           name: card_content_container_5
           properties: {}
@@ -182,12 +186,43 @@ components:
         name: card_customer_growth
         properties: {}
         type: form:dep_dapp798jbsn8mq:_Components.Card
+      - components:
+        - components:
+          - layout_properties: {slot: card-content-container-slot}
+            name: hdg_booking_summary
+            properties: {text: Booking Summary}
+            type: form:dep_dapp798jbsn8mq:_Components.Heading
+          layout_properties: {slot: card-content-slot}
+          name: card_content_container_6
+          properties: {}
+          type: form:dep_dapp798jbsn8mq:_Components.Card.CardContentContainer
+        - components:
+          - name: repeating_panel_1
+            properties: {item_template: analytics.DashboardAnalyticsForm.RowTemplate6}
+            type: RepeatingPanel
+          layout_properties: {slot: card-content-slot}
+          name: dg_booking_summary
+          properties: {}
+          type: DataGrid
+        layout_properties: {}
+        name: card_booking_summary
+        properties: {}
+        type: form:dep_dapp798jbsn8mq:_Components.Card
       layout_properties: {grid_position: 'AWBNWC,TIIJVN'}
       name: flow_charts_secondary
       properties: {}
       type: FlowPanel
     layout_properties: {grid_position: 'VDOAJC,JUQRDS'}
     name: col_analytics
+    properties: {}
+    type: ColumnPanel
+  - components:
+    - layout_properties: {grid_position: 'MVPHVN,LBHFKB'}
+      name: image_1
+      properties: {height: 32.25}
+      type: Image
+    layout_properties: {grid_position: 'OKPZTK,LHHKEJ'}
+    name: col_empty_state
     properties: {}
     type: ColumnPanel
   layout_properties: {slot: default}
