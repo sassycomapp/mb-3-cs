@@ -216,11 +216,7 @@ components:
     name: col_analytics
     properties: {}
     type: ColumnPanel
-  - components:
-    - layout_properties: {grid_position: 'MVPHVN,LBHFKB'}
-      name: image_1
-      properties: {height: 32.25}
-      type: Image
+  - components: []
     layout_properties: {grid_position: 'OKPZTK,LHHKEJ'}
     name: col_empty_state
     properties: {}
