@@ -216,7 +216,23 @@ components:
     name: col_analytics
     properties: {}
     type: ColumnPanel
-  - components: []
+  - components:
+    - layout_properties: {grid_position: 'AILKSV,MVLBEK'}
+      name: ico_empty_state
+      properties: {icon: 'mi:bar_chart'}
+      type: form:dep_dapp798jbsn8mq:_Components.IconButton
+    - layout_properties: {grid_position: 'NMOXTY,FCZCDZ'}
+      name: hdg_empty_state
+      properties: {text: No data yet}
+      type: form:dep_dapp798jbsn8mq:_Components.Heading
+    - layout_properties: {grid_position: 'ITFWQW,JPECKQ'}
+      name: txt_empty_state
+      properties: {text: 'Analytics will appear here once you have bookings, payments, and contacts in the system.'}
+      type: form:dep_dapp798jbsn8mq:_Components.Text
+    - layout_properties: {grid_position: 'WTUSDI,QZNBRY'}
+      name: btn_empty_action
+      properties: {text: Create Your First Booking}
+      type: form:dep_dapp798jbsn8mq:_Components.Button
     layout_properties: {grid_position: 'OKPZTK,LHHKEJ'}
     name: col_empty_state
     properties: {}
