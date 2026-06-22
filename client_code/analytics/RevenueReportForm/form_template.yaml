@@ -27,7 +27,11 @@ components:
       properties: {}
       type: FlowPanel
     - components:
-      - components: []
+      - components:
+        - layout_properties: {slot: card-content-slot}
+          name: heading_1
+          properties: {}
+          type: form:dep_dapp798jbsn8mq:_Components.Heading
         layout_properties: {}
         name: card_total_revenue
         properties: {}
@@ -93,14 +97,50 @@ components:
       properties: {}
       type: form:dep_dapp798jbsn8mq:_Components.Card
     - components:
-      - layout_properties: {slot: card-content-slot}
+      - components:
+        - layout_properties: {slot: card-content-container-slot}
+          name: hdg_revenue_details
+          properties: {text: Revenue Details}
+          type: form:dep_dapp798jbsn8mq:_Components.Heading
+        - components:
+          - name: repeating_panel_1
+            properties: {item_template: analytics.RevenueReportForm.RowTemplate7}
+            type: RepeatingPanel
+          layout_properties: {slot: card-content-container-slot}
+          name: dg_revenue_details
+          properties: {}
+          type: DataGrid
+        layout_properties: {slot: card-content-slot}
         name: card_content_container_5
         properties: {}
         type: form:dep_dapp798jbsn8mq:_Components.Card.CardContentContainer
       layout_properties: {grid_position: 'SEZSWF,CAAJJO'}
-      name: card_1
+      name: card_revenue_details
       properties: {}
       type: form:dep_dapp798jbsn8mq:_Components.Card
+    - components:
+      - layout_properties: {grid_position: 'QSJTKE,PXDHYJ'}
+        name: ico_empty_state
+        properties: {icon: 'mi:receipt'}
+        type: form:dep_dapp798jbsn8mq:_Components.IconButton
+      - layout_properties: {grid_position: 'ZXULJR,CUFHAX'}
+        name: hdg_empty_state
+        properties: {text: No revenue data}
+        type: form:dep_dapp798jbsn8mq:_Components.Heading
+      - layout_properties: {grid_position: 'JPWCPE,FUPEGU'}
+        name: txt_empty_state
+        properties:
+          text: |
+            Select a date range and generate a report to view revenue details
+        type: form:dep_dapp798jbsn8mq:_Components.Text
+      - layout_properties: {grid_position: 'GZPBRF,RDEVZV'}
+        name: btn_empty_action
+        properties: {text: Create Your First Booking}
+        type: form:dep_dapp798jbsn8mq:_Components.Button
+      layout_properties: {grid_position: 'SUVDRQ,CEKHNX'}
+      name: col_empty_state
+      properties: {}
+      type: ColumnPanel
     layout_properties: {grid_position: 'YOBPEJ,IGPGEZ'}
     name: col_revenue
     properties: {}
