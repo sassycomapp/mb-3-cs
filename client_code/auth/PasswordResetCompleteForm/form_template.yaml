@@ -1,5 +1,47 @@
 components:
-- components: []
+- components:
+  - components:
+    - components:
+      - layout_properties: {slot: card-content-container-slot}
+        name: hdg_reset_complete_title
+        properties: {text: Set a new password}
+        type: form:dep_dapp798jbsn8mq:_Components.Heading
+      - layout_properties: {slot: card-content-container-slot}
+        name: txt_reset_complete_subtitle
+        properties: {text: Choose a strong password for your account}
+        type: form:dep_dapp798jbsn8mq:_Components.Text
+      - layout_properties: {slot: card-content-container-slot}
+        name: txt_reset_complete_error
+        properties: {}
+        type: form:dep_dapp798jbsn8mq:_Components.Text
+      - data_bindings:
+        - {code: 'self.item['''']', property: text, writeback: true}
+        layout_properties: {slot: card-content-container-slot}
+        name: txt_new_password
+        properties: {appearance: outlined, hide_text: true, label: Confirm New Password, placeholder: New Password}
+        type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextBox
+      - data_bindings:
+        - {code: 'self.item['''']', property: text, writeback: true}
+        layout_properties: {slot: card-content-container-slot}
+        name: text_box_1
+        properties: {appearance: outlined, hide_text: true, label: Confirm New Password, placeholder: Confirm New Password}
+        type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextBox
+      - layout_properties: {slot: card-content-container-slot}
+        name: btn_reset_password
+        properties: {text: Reset Password}
+        type: form:dep_dapp798jbsn8mq:_Components.Button
+      - layout_properties: {slot: card-content-container-slot}
+        name: nav_back_to_login
+        properties: {text: Back to log in}
+        type: form:dep_dapp798jbsn8mq:_Components.Link
+      layout_properties: {slot: card-content-slot}
+      name: card_content_container_1
+      properties: {}
+      type: form:dep_dapp798jbsn8mq:_Components.Card.CardContentContainer
+    layout_properties: {grid_position: 'HVWPED,QGTYXR'}
+    name: card_password_reset_complete
+    properties: {appearance: outlined}
+    type: form:dep_dapp798jbsn8mq:_Components.Card
   layout_properties: {slot: default}
   name: content_panel
   properties: {}

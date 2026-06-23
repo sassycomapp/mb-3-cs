@@ -1,5 +1,59 @@
 components:
-- components: []
+- components:
+  - components:
+    - components:
+      - layout_properties: {slot: card-content-container-slot}
+        name: hdg_signup_title
+        properties: {text: Create your account}
+        type: form:dep_dapp798jbsn8mq:_Components.Heading
+      - layout_properties: {slot: card-content-container-slot}
+        name: txt_signup_subtitle
+        properties: {text: Set up your business in minutes}
+        type: form:dep_dapp798jbsn8mq:_Components.Text
+      - layout_properties: {slot: card-content-container-slot}
+        name: txt_signup_error
+        properties: {}
+        type: form:dep_dapp798jbsn8mq:_Components.Text
+      - data_bindings:
+        - {code: 'self.item['''']', property: text, writeback: true}
+        layout_properties: {slot: card-content-container-slot}
+        name: txt_full_name
+        properties: {appearance: outlined, label: Full name, placeholder: Full name}
+        type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextBox
+      - data_bindings:
+        - {code: 'self.item['''']', property: text, writeback: false}
+        layout_properties: {slot: card-content-container-slot}
+        name: txt_email
+        properties: {appearance: outlined, label: Email address, placeholder: Email address, text: Email address}
+        type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextBox
+      - data_bindings:
+        - {code: 'self.item['''']', property: text, writeback: true}
+        layout_properties: {slot: card-content-container-slot}
+        name: txt_password
+        properties: {appearance: outlined, label: Password, placeholder: Password}
+        type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextBox
+      - data_bindings:
+        - {code: 'self.item['''']', property: text, writeback: true}
+        layout_properties: {slot: card-content-container-slot}
+        name: txt_confirm_password
+        properties: {appearance: outlined, label: Confirm password, placeholder: Confirm password}
+        type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextBox
+      - layout_properties: {slot: card-content-container-slot}
+        name: txt_terms_prompt
+        properties: {text: By creating an account you agree to our}
+        type: form:dep_dapp798jbsn8mq:_Components.Text
+      - layout_properties: {slot: card-content-container-slot}
+        name: nav_terms
+        properties: {text: Terms of Service}
+        type: form:dep_dapp798jbsn8mq:_Components.Link
+      layout_properties: {slot: card-content-slot}
+      name: card_content_container_1
+      properties: {}
+      type: form:dep_dapp798jbsn8mq:_Components.Card.CardContentContainer
+    layout_properties: {grid_position: 'UCUWRW,NPRVTW'}
+    name: card_signup
+    properties: {appearance: outlined}
+    type: form:dep_dapp798jbsn8mq:_Components.Card
   layout_properties: {slot: default}
   name: content_panel
   properties: {}
