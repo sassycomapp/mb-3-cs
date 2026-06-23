@@ -1915,5 +1915,5 @@ services:
 - client_config: {}
   server_config: {custom_smtp: false}
   source: /runtime/services/anvil/email.yml
-startup: {module: analytics.DashboardAnalyticsForm, type: form}
+startup: {module: auth.LoginForm, type: form}
 startup_form: null

@@ -1,41 +1,49 @@
 components:
 - components:
   - components:
-    - layout_properties: {grid_position: 'JMLDPS,YRZUCK'}
-      name: txt_email
-      properties: {text: Email}
-      type: form:dep_dapp798jbsn8mq:_Components.Text
-    - layout_properties: {grid_position: 'ERJJYH,OGQUGN'}
-      name: txt_password
-      properties: {text: Password}
-      type: form:dep_dapp798jbsn8mq:_Components.Text
-    - layout_properties: {grid_position: 'WYUKVJ,QWMLMZ'}
-      name: cb_remember
-      properties: {text: Remember me}
-      type: form:dep_dapp798jbsn8mq:_Components.Checkbox
-    - layout_properties: {grid_position: 'OOKCCO,QWROFO'}
-      name: btn_sign_in
-      properties: {text: Sign in}
-      type: form:dep_dapp798jbsn8mq:_Components.Button
     - components:
-      - layout_properties: {slot: anvil-m3-link-slot}
-        name: txt_sign_up_prompt
+      - layout_properties: {slot: card-content-container-slot}
+        name: hdg_login_title
+        properties: {text: Log in to your account}
+        type: form:dep_dapp798jbsn8mq:_Components.Heading
+      - layout_properties: {slot: card-content-container-slot}
+        name: txt_login_subtitle
         properties:
           text: |
-            Dont have an account?
+            Enter your email and password to continue
         type: form:dep_dapp798jbsn8mq:_Components.Text
-      - layout_properties: {slot: anvil-m3-link-slot}
-        name: lnk_sign_up
-        properties: {text: Sign up}
+      - layout_properties: {slot: card-content-container-slot}
+        name: txt_login_error
+        properties: {}
+        type: form:dep_dapp798jbsn8mq:_Components.Text
+      - layout_properties: {slot: card-content-container-slot}
+        name: txt_email
+        properties: {appearance: outlined, label: Email afddress, placeholder: Email address}
+        type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextBox
+      - layout_properties: {slot: card-content-container-slot}
+        name: txt_password
+        properties: {appearance: outlined, label: Password, placeholder: Password}
+        type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextBox
+      - layout_properties: {slot: card-content-container-slot}
+        name: cb_remember_me
+        properties: {text: Remember me}
+        type: form:dep_dapp798jbsn8mq:_Components.Checkbox
+      - layout_properties: {slot: card-content-container-slot}
+        name: btn_login
+        properties: {text: Login}
+        type: form:dep_dapp798jbsn8mq:_Components.Button
+      - layout_properties: {slot: card-content-container-slot}
+        name: nav_forgot_password
+        properties: {text: 'Forgot password?'}
         type: form:dep_dapp798jbsn8mq:_Components.Link
-      layout_properties: {grid_position: 'AANPTD,QONSFT'}
-      name: lnk_forgot_password
-      properties: {text: 'Forgot password?'}
-      type: form:dep_dapp798jbsn8mq:_Components.Link
-    layout_properties: {grid_position: 'FMINGV,BTNTJM'}
-    name: col_login
+      layout_properties: {slot: card-content-slot}
+      name: card_content_container_1
+      properties: {}
+      type: form:dep_dapp798jbsn8mq:_Components.Card.CardContentContainer
+    layout_properties: {grid_position: 'LUOXCV,QLGPZN'}
+    name: card_login
     properties: {}
-    type: ColumnPanel
+    type: form:dep_dapp798jbsn8mq:_Components.Card
   layout_properties: {slot: default}
   name: content_panel
   properties: {}
