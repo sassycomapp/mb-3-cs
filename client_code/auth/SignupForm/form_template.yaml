@@ -42,7 +42,16 @@ components:
         name: txt_terms_prompt
         properties: {text: By creating an account you agree to our}
         type: form:dep_dapp798jbsn8mq:_Components.Text
-      - layout_properties: {slot: card-content-container-slot}
+      - components:
+        - layout_properties: {slot: anvil-m3-link-slot}
+          name: text_1
+          properties: {text: and}
+          type: form:dep_dapp798jbsn8mq:_Components.Text
+        - layout_properties: {slot: anvil-m3-link-slot}
+          name: nav_privacy
+          properties: {text: Privacy Policy}
+          type: form:dep_dapp798jbsn8mq:_Components.Link
+        layout_properties: {slot: card-content-container-slot}
         name: nav_terms
         properties: {text: Terms of Service}
         type: form:dep_dapp798jbsn8mq:_Components.Link
