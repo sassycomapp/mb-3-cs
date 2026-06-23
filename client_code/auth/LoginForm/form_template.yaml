@@ -4,11 +4,12 @@ components:
     - components:
       - layout_properties: {slot: card-content-container-slot}
         name: hdg_login_title
-        properties: {text: Log in to your account}
+        properties: {align: center, text: Log in to your account}
         type: form:dep_dapp798jbsn8mq:_Components.Heading
       - layout_properties: {slot: card-content-container-slot}
         name: txt_login_subtitle
         properties:
+          align: center
           text: |
             Enter your email and password to continue
         type: form:dep_dapp798jbsn8mq:_Components.Text
@@ -16,9 +17,11 @@ components:
         name: txt_login_error
         properties: {}
         type: form:dep_dapp798jbsn8mq:_Components.Text
-      - layout_properties: {slot: card-content-container-slot}
+      - data_bindings:
+        - {code: 'self.item['''']', property: text, writeback: true}
+        layout_properties: {slot: card-content-container-slot}
         name: txt_email
-        properties: {appearance: outlined, label: Email afddress, placeholder: Email address}
+        properties: {appearance: outlined, error: false, label: Email address, placeholder: Email address}
         type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextBox
       - layout_properties: {slot: card-content-container-slot}
         name: txt_password
@@ -36,6 +39,40 @@ components:
         name: nav_forgot_password
         properties: {text: 'Forgot password?'}
         type: form:dep_dapp798jbsn8mq:_Components.Link
+      - components:
+        - components:
+          - layout_properties: {slot: card-content-container-slot}
+            name: radio_button_1
+            properties: {}
+            type: form:dep_dapp798jbsn8mq:_Components.RadioButton
+          - layout_properties: {slot: card-content-container-slot}
+            name: checkbox_1
+            properties: {}
+            type: form:dep_dapp798jbsn8mq:_Components.Checkbox
+          - layout_properties: {slot: card-content-container-slot}
+            name: file_loader_1
+            properties: {}
+            type: form:dep_dapp798jbsn8mq:_Components.FileLoader
+          - layout_properties: {slot: card-content-container-slot}
+            name: slider_1
+            properties: {}
+            type: form:dep_dapp798jbsn8mq:_Components.Slider
+          - layout_properties: {slot: card-content-container-slot}
+            name: date_picker_1
+            properties: {}
+            type: DatePicker
+          - layout_properties: {slot: card-content-container-slot}
+            name: file_loader_2
+            properties: {}
+            type: form:dep_dapp798jbsn8mq:_Components.FileLoader
+          layout_properties: {slot: card-content-slot}
+          name: card_content_container_2
+          properties: {}
+          type: form:dep_dapp798jbsn8mq:_Components.Card.CardContentContainer
+        layout_properties: {slot: card-content-container-slot}
+        name: card_1
+        properties: {}
+        type: form:dep_dapp798jbsn8mq:_Components.Card
       layout_properties: {slot: card-content-slot}
       name: card_content_container_1
       properties: {}
