@@ -102,6 +102,10 @@ components:
           name: txt_comment_name
           properties: {appearance: outlined, text: Your Name}
           type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextBox
+        - layout_properties: {slot: card-content-container-slot}
+          name: txt_comment_email
+          properties: {appearance: outlined}
+          type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextBox
         layout_properties: {slot: card-content-slot}
         name: card_content_container_2
         properties: {}
