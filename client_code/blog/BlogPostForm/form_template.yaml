@@ -92,6 +92,10 @@ components:
           name: hdg_comments_title
           properties: {text: Comments}
           type: form:dep_dapp798jbsn8mq:_Components.Heading
+        - layout_properties: {slot: card-content-container-slot}
+          name: repeating_panel_2
+          properties: {item_template: blog.BlogPostForm.CommentsTemplate}
+          type: RepeatingPanel
         - data_bindings:
           - {code: 'self.item['''']', property: text, writeback: true}
           layout_properties: {slot: card-content-container-slot}
