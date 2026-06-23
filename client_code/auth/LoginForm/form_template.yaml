@@ -23,12 +23,14 @@ components:
         name: txt_email
         properties: {appearance: outlined, error: false, label: Email address, placeholder: Email address}
         type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextBox
-      - data_bindings: []
+      - data_bindings:
+        - {code: 'self.item['''']', property: text, writeback: true}
         layout_properties: {slot: card-content-container-slot}
         name: txt_password
         properties: {appearance: outlined, label: Password, placeholder: Password}
         type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextBox
-      - data_bindings: []
+      - data_bindings:
+        - {code: 'self.item['''']', property: checked, writeback: true}
         layout_properties: {slot: card-content-container-slot}
         name: cb_remember_me
         properties: {text: Remember me}
@@ -50,6 +52,7 @@ components:
             type: form:dep_dapp798jbsn8mq:_Components.RadioButton
           - data_bindings:
             - {code: 'self.item['''']', property: text, writeback: false}
+            - {code: 'self.item['''']', property: checked, writeback: true}
             layout_properties: {slot: card-content-container-slot}
             name: checkbox_1
             properties: {}
@@ -59,25 +62,105 @@ components:
             name: file_loader_1
             properties: {}
             type: form:dep_dapp798jbsn8mq:_Components.FileLoader
-          - layout_properties: {slot: card-content-container-slot}
+          - data_bindings:
+            - {code: 'self.item['''']', property: max, writeback: false}
+            - {code: 'self.item['''']', property: value, writeback: true}
+            layout_properties: {slot: card-content-container-slot}
             name: slider_1
             properties: {}
             type: form:dep_dapp798jbsn8mq:_Components.Slider
           - data_bindings: []
             layout_properties: {slot: card-content-container-slot}
             name: date_picker_1
-            properties: {}
+            properties: {pick_time: false}
             type: DatePicker
           - data_bindings: []
             layout_properties: {slot: card-content-container-slot}
             name: file_loader_2
             properties: {}
             type: form:dep_dapp798jbsn8mq:_Components.FileLoader
-          - data_bindings: []
+          - data_bindings:
+            - {code: 'self.item['''']', property: selected, writeback: false}
             layout_properties: {slot: card-content-container-slot}
             name: switch_1
             properties: {}
             type: form:dep_dapp798jbsn8mq:_Components.Switch
+          - data_bindings: []
+            layout_properties: {slot: card-content-container-slot}
+            name: text_1
+            properties: {}
+            type: form:dep_dapp798jbsn8mq:_Components.Text
+          - components:
+            - data_bindings: []
+              layout_properties: {slot: anvil-m3-link-slot}
+              name: rich_text_1
+              properties: {}
+              type: RichText
+            - data_bindings:
+              - {code: 'self.item['''']', property: text, writeback: false}
+              layout_properties: {slot: anvil-m3-link-slot}
+              name: text_area_1
+              properties: {}
+              type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextArea
+            - data_bindings: []
+              layout_properties: {slot: anvil-m3-link-slot}
+              name: dropdown_menu_1
+              properties: {}
+              type: form:dep_dapp798jbsn8mq:_Components.DropdownMenu
+            - data_bindings: []
+              layout_properties: {slot: anvil-m3-link-slot}
+              name: file_loader_3
+              properties: {}
+              type: form:dep_dapp798jbsn8mq:_Components.FileLoader
+            - data_bindings:
+              - {code: 'self.item['''']', property: appearance, writeback: false}
+              - {code: 'self.item['''']', property: items, writeback: false}
+              - {code: 'self.item['''']', property: label, writeback: false}
+              - {code: 'self.item['''']', property: placeholder, writeback: false}
+              - {code: 'self.item['''']', property: supporting_text, writeback: false}
+              - {code: 'self.item['''']', property: items_bold, writeback: false}
+              - {code: 'self.item['''']', property: items_font_family, writeback: false}
+              - {code: 'self.item['''']', property: items_font_size, writeback: false}
+              - {code: 'self.item['''']', property: items_text_color, writeback: false}
+              - {code: 'self.item['''']', property: icon, writeback: false}
+              - {code: 'self.item['''']', property: icon_color, writeback: false}
+              - {code: 'self.item['''']', property: selected_value, writeback: true}
+              layout_properties: {slot: anvil-m3-link-slot}
+              name: dropdown_menu_2
+              properties: {}
+              type: form:dep_dapp798jbsn8mq:_Components.DropdownMenu
+            - components:
+              - name: radio_button_2
+                properties: {}
+                type: form:dep_dapp798jbsn8mq:_Components.RadioButton
+              - name: radio_button_3
+                properties: {}
+                type: form:dep_dapp798jbsn8mq:_Components.RadioButton
+              - name: radio_button_4
+                properties: {}
+                type: form:dep_dapp798jbsn8mq:_Components.RadioButton
+              data_bindings:
+              - {code: 'self.item['''']', property: selected_value, writeback: false}
+              layout_properties: {slot: anvil-m3-link-slot}
+              name: radio_group_panel_1
+              properties: {}
+              type: form:dep_dapp798jbsn8mq:_Components.RadioGroupPanel
+            - data_bindings: []
+              layout_properties: {slot: anvil-m3-link-slot}
+              name: circular_progress_indicator_1
+              properties: {}
+              type: form:dep_dapp798jbsn8mq:_Components.CircularProgressIndicator
+            - data_bindings: []
+              layout_properties: {slot: anvil-m3-link-slot}
+              name: linear_progress_indicator_1
+              properties: {type: indeterminate}
+              type: form:dep_dapp798jbsn8mq:_Components.LinearProgressIndicator
+            data_bindings:
+            - {code: 'self.item['''']', property: text, writeback: false}
+            layout_properties: {slot: card-content-container-slot}
+            name: link_1
+            properties: {}
+            type: form:dep_dapp798jbsn8mq:_Components.Link
           layout_properties: {slot: card-content-slot}
           name: card_content_container_2
           properties: {}
