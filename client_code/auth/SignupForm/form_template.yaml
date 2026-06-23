@@ -47,13 +47,26 @@ components:
           name: text_1
           properties: {text: and}
           type: form:dep_dapp798jbsn8mq:_Components.Text
-        - layout_properties: {slot: anvil-m3-link-slot}
+        - components:
+          - layout_properties: {slot: anvil-m3-link-slot}
+            name: btn_signup
+            properties: {text: Create Account}
+            type: form:dep_dapp798jbsn8mq:_Components.Button
+          layout_properties: {slot: anvil-m3-link-slot}
           name: nav_privacy
           properties: {text: Privacy Policy}
           type: form:dep_dapp798jbsn8mq:_Components.Link
         layout_properties: {slot: card-content-container-slot}
         name: nav_terms
         properties: {text: Terms of Service}
+        type: form:dep_dapp798jbsn8mq:_Components.Link
+      - layout_properties: {slot: card-content-container-slot}
+        name: txt_login_prompt
+        properties: {text: 'Already have an account?'}
+        type: form:dep_dapp798jbsn8mq:_Components.Text
+      - layout_properties: {slot: card-content-container-slot}
+        name: nav_login
+        properties: {text: Log in}
         type: form:dep_dapp798jbsn8mq:_Components.Link
       layout_properties: {slot: card-content-slot}
       name: card_content_container_1
