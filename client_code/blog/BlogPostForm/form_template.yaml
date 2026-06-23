@@ -1,5 +1,153 @@
 components:
-- components: []
+- components:
+  - components:
+    - components:
+      - components:
+        - layout_properties: {slot: card-content-container-slot}
+          name: txt_category_badge
+          properties: {}
+          type: form:dep_dapp798jbsn8mq:_Components.Text
+        - layout_properties: {slot: card-content-container-slot}
+          name: hdg_post_title
+          properties: {}
+          type: form:dep_dapp798jbsn8mq:_Components.Heading
+        - layout_properties: {slot: card-content-container-slot}
+          name: txt_meta
+          properties: {}
+          type: form:dep_dapp798jbsn8mq:_Components.Text
+        layout_properties: {slot: card-content-slot}
+        name: card_post_header
+        properties: {}
+        type: form:dep_dapp798jbsn8mq:_Components.Card.CardContentContainer
+      layout_properties: {grid_position: 'DMWFEG,PEWGTU'}
+      name: card_1
+      properties: {}
+      type: form:dep_dapp798jbsn8mq:_Components.Card
+    - layout_properties: {grid_position: 'MVIBTQ,HRPTBO'}
+      name: img_featured
+      properties: {}
+      type: Image
+    - components:
+      - components:
+        - layout_properties: {slot: card-content-container-slot}
+          name: txt_post_content
+          properties: {}
+          type: form:dep_dapp798jbsn8mq:_Components.Text
+        layout_properties: {slot: card-content-slot}
+        name: card_content
+        properties: {}
+        type: form:dep_dapp798jbsn8mq:_Components.Card.CardContentContainer
+      layout_properties: {grid_position: 'WGCRSS,EFNGAD DUQROW,OWJZRX'}
+      name: card_2
+      properties: {}
+      type: form:dep_dapp798jbsn8mq:_Components.Card
+    - components:
+      - components:
+        - layout_properties: {slot: card-content-container-slot}
+          name: txt_pullquote
+          properties: {}
+          type: form:dep_dapp798jbsn8mq:_Components.Text
+        layout_properties: {slot: card-content-slot}
+        name: card_pullquote
+        properties: {}
+        type: form:dep_dapp798jbsn8mq:_Components.Card.CardContentContainer
+      layout_properties: {grid_position: 'WGCRSS,EFNGAD BUTUGR,RBPJYL'}
+      name: card_4
+      properties: {}
+      type: form:dep_dapp798jbsn8mq:_Components.Card
+    - components:
+      - components:
+        - layout_properties: {slot: card-content-container-slot}
+          name: heading_1
+          properties: {text: Insert video custom component  - still to be built}
+          type: form:dep_dapp798jbsn8mq:_Components.Heading
+        layout_properties: {slot: card-content-slot}
+        name: card_content_container_1
+        properties: {}
+        type: form:dep_dapp798jbsn8mq:_Components.Card.CardContentContainer
+      layout_properties: {grid_position: 'WGCRSS,EFNGAD FSGNWQ,LANWJN'}
+      name: card_video
+      properties: {}
+      type: form:dep_dapp798jbsn8mq:_Components.Card
+    - components:
+      - layout_properties: {}
+        name: btn_share_facebook
+        properties: {}
+        type: form:dep_dapp798jbsn8mq:_Components.Button
+      - layout_properties: {}
+        name: btn_share_twitter
+        properties: {}
+        type: form:dep_dapp798jbsn8mq:_Components.Button
+      - layout_properties: {}
+        name: btn_share_linkedin
+        properties: {}
+        type: form:dep_dapp798jbsn8mq:_Components.Button
+      layout_properties: {grid_position: 'WGCRSS,EFNGAD FJNUIO,YWSXBB'}
+      name: flow_panel_1
+      properties: {}
+      type: FlowPanel
+    - components:
+      - components:
+        - layout_properties: {slot: card-content-container-slot}
+          name: hdg_comments_title
+          properties: {text: Comments}
+          type: form:dep_dapp798jbsn8mq:_Components.Heading
+        - layout_properties: {slot: card-content-container-slot}
+          name: rp_comments
+          properties: {item_template: blog.BlogPostForm.ItemTemplate3}
+          type: RepeatingPanel
+        - data_bindings:
+          - {code: 'self.item['''']', property: text, writeback: true}
+          layout_properties: {slot: card-content-container-slot}
+          name: txt_comment_name
+          properties: {appearance: outlined, text: Your Name}
+          type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextBox
+        layout_properties: {slot: card-content-slot}
+        name: card_content_container_2
+        properties: {}
+        type: form:dep_dapp798jbsn8mq:_Components.Card.CardContentContainer
+      layout_properties: {grid_position: 'WGCRSS,EFNGAD HZMPYS,FZXIPJ'}
+      name: card_comments
+      properties: {}
+      type: form:dep_dapp798jbsn8mq:_Components.Card
+    - components:
+      - components:
+        - layout_properties: {slot: card-content-container-slot}
+          name: hdg_author
+          properties: {text: Author}
+          type: form:dep_dapp798jbsn8mq:_Components.Heading
+        - layout_properties: {slot: card-content-container-slot}
+          name: txt_author_bio
+          properties: {}
+          type: form:dep_dapp798jbsn8mq:_Components.Text
+        - layout_properties: {slot: card-content-container-slot}
+          name: hdg_related_posts
+          properties: {text: Related Posts}
+          type: form:dep_dapp798jbsn8mq:_Components.Heading
+        - layout_properties: {slot: card-content-container-slot}
+          name: rp_related_posts
+          properties: {item_template: blog.BlogPostForm.ItemTemplate1}
+          type: RepeatingPanel
+        - layout_properties: {slot: card-content-container-slot}
+          name: hdg_categories
+          properties: {text: Categories}
+          type: form:dep_dapp798jbsn8mq:_Components.Heading
+        - layout_properties: {slot: card-content-container-slot}
+          name: rp_categories
+          properties: {item_template: blog.BlogPostForm.ItemTemplate2}
+          type: RepeatingPanel
+        layout_properties: {slot: card-content-slot}
+        name: card_sidebar
+        properties: {}
+        type: form:dep_dapp798jbsn8mq:_Components.Card.CardContentContainer
+      layout_properties: {grid_position: 'WGCRSS,TRSTDD'}
+      name: card_3
+      properties: {}
+      type: form:dep_dapp798jbsn8mq:_Components.Card
+    layout_properties: {grid_position: 'CKXZRU,NSTSRU'}
+    name: col_blog_post
+    properties: {col_widths: '{"EFNGAD":40,"TRSTDD":20}'}
+    type: ColumnPanel
   layout_properties: {slot: default}
   name: content_panel
   properties: {}
