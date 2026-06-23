@@ -1,0 +1,15 @@
+components:
+- layout_properties: {grid_position: 'OZZAHA,ECIOAF'}
+  name: image_1
+  properties: {}
+  type: Image
+- layout_properties: {grid_position: 'OZZAHA,ETJCIQ'}
+  name: image_2
+  properties: {}
+  type: Image
+- layout_properties: {grid_position: 'OZZAHA,DUKSOD'}
+  name: image_3
+  properties: {}
+  type: Image
+container: {type: ColumnPanel}
+is_package: true

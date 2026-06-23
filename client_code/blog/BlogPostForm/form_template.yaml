@@ -92,20 +92,22 @@ components:
           name: hdg_comments_title
           properties: {text: Comments}
           type: form:dep_dapp798jbsn8mq:_Components.Heading
-        - layout_properties: {slot: card-content-container-slot}
-          name: rp_comments
-          properties: {item_template: blog.BlogPostForm.ItemTemplate3}
-          type: RepeatingPanel
         - data_bindings:
           - {code: 'self.item['''']', property: text, writeback: true}
           layout_properties: {slot: card-content-container-slot}
           name: txt_comment_name
           properties: {appearance: outlined, text: Your Name}
           type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextBox
-        - layout_properties: {slot: card-content-container-slot}
+        - data_bindings:
+          - {code: 'self.item['''']', property: text, writeback: true}
+          layout_properties: {slot: card-content-container-slot}
           name: txt_comment_email
-          properties: {appearance: outlined}
+          properties: {appearance: outlined, text: Your Email}
           type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextBox
+        - layout_properties: {slot: card-content-container-slot}
+          name: txt_comment_text
+          properties: {appearance: outlined, text: Your Comment}
+          type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextArea
         layout_properties: {slot: card-content-slot}
         name: card_content_container_2
         properties: {}
@@ -130,15 +132,15 @@ components:
           type: form:dep_dapp798jbsn8mq:_Components.Heading
         - layout_properties: {slot: card-content-container-slot}
           name: rp_related_posts
-          properties: {item_template: blog.BlogPostForm.ItemTemplate1}
+          properties: {item_template: blog.BlogPostForm.RelatedPostsTemplate}
           type: RepeatingPanel
         - layout_properties: {slot: card-content-container-slot}
           name: hdg_categories
           properties: {text: Categories}
           type: form:dep_dapp798jbsn8mq:_Components.Heading
         - layout_properties: {slot: card-content-container-slot}
-          name: rp_categories
-          properties: {item_template: blog.BlogPostForm.ItemTemplate2}
+          name: repeating_panel_1
+          properties: {item_template: blog.BlogPostForm.CategoriesTemplate}
           type: RepeatingPanel
         layout_properties: {slot: card-content-slot}
         name: card_sidebar
