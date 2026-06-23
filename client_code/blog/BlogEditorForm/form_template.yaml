@@ -1,5 +1,145 @@
 components:
-- components: []
+- components:
+  - components:
+    - layout_properties: {grid_position: 'UBCTVP,SAQFML'}
+      name: hdg_editor_title
+      properties: {text: Blog Editor}
+      type: form:dep_dapp798jbsn8mq:_Components.Heading
+    - components:
+      - layout_properties: {}
+        name: btn_save_draft
+        properties: {appearance: outlined, text: Save Draft}
+        type: form:dep_dapp798jbsn8mq:_Components.Button
+      - layout_properties: {}
+        name: button_1
+        properties: {text: Publish}
+        type: form:dep_dapp798jbsn8mq:_Components.Button
+      - layout_properties: {}
+        name: btn_cancel
+        properties: {appearance: text, text: Cancel}
+        type: form:dep_dapp798jbsn8mq:_Components.Button
+      layout_properties: {grid_position: 'UHRZLO,TLPIXC'}
+      name: flow_actions
+      properties: {}
+      type: FlowPanel
+    - layout_properties: {grid_position: 'DITJMC,ZXOGXL'}
+      name: txt_success_message
+      properties: {text: Post saved successfully.}
+      type: form:dep_dapp798jbsn8mq:_Components.Text
+    - components:
+      - components:
+        - data_bindings:
+          - {code: 'self.item['''']', property: text, writeback: true}
+          layout_properties: {slot: card-content-container-slot}
+          name: txt_title
+          properties: {appearance: outlined, label: Post Title}
+          type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextBox
+        - data_bindings:
+          - {code: 'self.item['''']', property: text, writeback: true}
+          layout_properties: {slot: card-content-container-slot}
+          name: txt_slug
+          properties: {appearance: outlined, label: URL Slug}
+          type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextBox
+        - data_bindings:
+          - {code: 'self.item['''']', property: text, writeback: true}
+          layout_properties: {slot: card-content-container-slot}
+          name: txt_excerpt
+          properties: {appearance: outlined, label: Excerpt}
+          type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextArea
+        - data_bindings:
+          - {code: 'self.item['''']', property: text, writeback: true}
+          layout_properties: {slot: card-content-container-slot}
+          name: txt_content
+          properties: {appearance: outlined, label: Content}
+          type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextArea
+        - data_bindings: []
+          layout_properties: {slot: card-content-container-slot}
+          name: fu_featured_image
+          properties: {appearance: filled, text: Upload Featured Image}
+          type: form:dep_dapp798jbsn8mq:_Components.FileLoader
+        layout_properties: {slot: card-content-slot}
+        name: card_content_container_1
+        properties: {}
+        type: form:dep_dapp798jbsn8mq:_Components.Card.CardContentContainer
+      layout_properties: {grid_position: 'RVUKDP,IBIWHW'}
+      name: card_content
+      properties: {appearance: outlined}
+      type: form:dep_dapp798jbsn8mq:_Components.Card
+    - components:
+      - components:
+        - layout_properties: {slot: card-content-container-slot}
+          name: hdg_publishing
+          properties: {text: Publishing}
+          type: form:dep_dapp798jbsn8mq:_Components.Heading
+        - data_bindings:
+          - {code: 'self.item['''']', property: selected_value, writeback: true}
+          layout_properties: {slot: card-content-container-slot}
+          name: dd_status
+          properties: {label: Status}
+          type: form:dep_dapp798jbsn8mq:_Components.DropdownMenu
+        - data_bindings:
+          - {code: 'self.item['''']', property: selected_value, writeback: false}
+          layout_properties: {slot: card-content-container-slot}
+          name: dd_category
+          properties: {label: Category}
+          type: form:dep_dapp798jbsn8mq:_Components.DropdownMenu
+        - data_bindings:
+          - {code: 'self.item['''']', property: selected_value, writeback: true}
+          layout_properties: {slot: card-content-container-slot}
+          name: dd_template
+          properties: {label: Post Template}
+          type: form:dep_dapp798jbsn8mq:_Components.DropdownMenu
+        - layout_properties: {slot: card-content-container-slot}
+          name: hdg_seo_settings
+          properties: {text: SEO Settings}
+          type: form:dep_dapp798jbsn8mq:_Components.Heading
+        - data_bindings:
+          - {code: 'self.item['''']', property: text, writeback: true}
+          layout_properties: {slot: card-content-container-slot}
+          name: text_box_1
+          properties: {appearance: outlined, label: SEO Title}
+          type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextBox
+        - data_bindings:
+          - {code: 'self.item['''']', property: text, writeback: true}
+          layout_properties: {slot: card-content-container-slot}
+          name: txt_meta_description
+          properties: {appearance: outlined, label: SEO Description}
+          type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextBox
+        - data_bindings:
+          - {code: 'self.item['''']', property: text, writeback: true}
+          layout_properties: {slot: card-content-container-slot}
+          name: txt_keywords
+          properties: {appearance: outlined, label: Keywords}
+          type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextBox
+        - layout_properties: {slot: card-content-container-slot}
+          name: hdg_options
+          properties: {text: Template Options}
+          type: form:dep_dapp798jbsn8mq:_Components.Heading
+        - data_bindings:
+          - {code: 'self.item['''']', property: text, writeback: true}
+          layout_properties: {slot: card-content-container-slot}
+          name: txt_pullquote
+          properties: {appearance: outlined, label: Pullquote}
+          type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextBox
+        - data_bindings:
+          - {code: 'self.item['''']', property: text, writeback: true}
+          layout_properties: {slot: card-content-container-slot}
+          name: txt_video_url
+          properties: {appearance: outlined, label: Video URL (YouTube)}
+          type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextBox
+        layout_properties: {slot: card-content-slot}
+        name: card_content_container_2
+        properties: {}
+        type: form:dep_dapp798jbsn8mq:_Components.Card.CardContentContainer
+      layout_properties: {grid_position: 'RVUKDP,CRMFCI'}
+      name: card_sidebar
+      properties: {appearance: outlined}
+      type: form:dep_dapp798jbsn8mq:_Components.Card
+    data_bindings: []
+    layout_properties: {grid_position: 'RTCATV,VXGNRB'}
+    name: col_editor
+    properties: {col_widths: '{"IBIWHW":40,"CRMFCI":20}'}
+    type: ColumnPanel
   layout_properties: {slot: default}
   name: content_panel
   properties: {}
