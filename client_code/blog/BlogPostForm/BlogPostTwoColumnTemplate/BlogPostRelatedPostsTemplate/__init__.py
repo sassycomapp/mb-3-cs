@@ -1,4 +1,4 @@
-from ._anvil_designer import ItemTemplate1Template
+from ._anvil_designer import BlogPostRelatedPostsTemplateTemplate
 from anvil import *
 import anvil.server
 from routing import router
@@ -7,7 +7,7 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 
-class ItemTemplate1(ItemTemplate1Template):
+class BlogPostRelatedPostsTemplate(BlogPostRelatedPostsTemplateTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     super().__init__(**properties)

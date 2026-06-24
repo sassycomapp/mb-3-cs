@@ -92,7 +92,7 @@ components:
         type: form:dep_dapp798jbsn8mq:_Components.Heading
       - layout_properties: {slot: card-content-container-slot}
         name: rp_related_posts
-        properties: {item_template: blog.BlogPostForm.RelatedPostsTemplate}
+        properties: {item_template: blog.BlogPostForm.BlogPostTwoColumnTemplate.BlogPostRelatedPostsTemplate}
         type: RepeatingPanel
       layout_properties: {slot: card-content-slot}
       name: card_content_container_2
@@ -104,7 +104,7 @@ components:
       type: form:dep_dapp798jbsn8mq:_Components.Heading
     - layout_properties: {slot: card-content-slot}
       name: rp_categories
-      properties: {item_template: blog.BlogPostForm.BlogPostTwoColumnTemplate.ItemTemplate2}
+      properties: {item_template: blog.BlogPostForm.BlogPostTwoColumnTemplate.BlogPostCategoriesTemplate}
       type: RepeatingPanel
     - layout_properties: {slot: card-content-slot}
       name: hdg_newsletter
@@ -122,7 +122,7 @@ components:
       type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextBox
     - layout_properties: {slot: card-content-slot}
       name: btn_subscribe
-      properties: {text: Subscribe Yes you know a good related person categories you can contrake all the same too}
+      properties: {text: Subscribe}
       type: form:dep_dapp798jbsn8mq:_Components.Button
     layout_properties: {grid_position: 'ZWFIPN,NMMNOC'}
     name: card_sidebar

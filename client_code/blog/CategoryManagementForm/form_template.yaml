@@ -1,5 +1,99 @@
 components:
-- components: []
+- components:
+  - layout_properties: {grid_position: 'QCXOSH,ZLSSNQ'}
+    name: hdg_categories_title
+    properties: {text: Blog Categories}
+    type: form:dep_dapp798jbsn8mq:_Components.Heading
+  - components:
+    - components:
+      - layout_properties: {}
+        name: btn_add_category
+        properties: {text: Add Category}
+        type: form:dep_dapp798jbsn8mq:_Components.Button
+      layout_properties: {grid_position: 'REBMPQ,WAPATS'}
+      name: flow_actions
+      properties: {}
+      type: FlowPanel
+    - components:
+      - components:
+        - components:
+          - name: repeating_panel_1
+            properties: {item_template: blog.CategoryManagementForm.RowTemplate2}
+            type: RepeatingPanel
+          layout_properties: {slot: card-content-container-slot}
+          name: dg_categories
+          properties: {}
+          type: DataGrid
+        layout_properties: {slot: card-content-slot}
+        name: card_content_container_1
+        properties: {}
+        type: form:dep_dapp798jbsn8mq:_Components.Card.CardContentContainer
+      layout_properties: {grid_position: 'BIQNJF,HMFSZP'}
+      name: card_category_list
+      properties: {}
+      type: form:dep_dapp798jbsn8mq:_Components.Card
+    - components:
+      - components:
+        - data_bindings:
+          - {code: 'self.item['''']', property: text, writeback: true}
+          layout_properties: {slot: card-content-container-slot}
+          name: txt_category_name
+          properties: {label: Category Name}
+          type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextBox
+        - data_bindings:
+          - {code: 'self.item['''']', property: text, writeback: true}
+          layout_properties: {slot: card-content-container-slot}
+          name: txt_category_slug
+          properties: {label: URL Slug}
+          type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextBox
+        - data_bindings:
+          - {code: 'self.item['''']', property: text, writeback: true}
+          layout_properties: {slot: card-content-container-slot}
+          name: txt_category_description
+          properties: {label: Description}
+          type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextArea
+        layout_properties: {slot: card-content-slot}
+        name: card_content_container_2
+        properties: {}
+        type: form:dep_dapp798jbsn8mq:_Components.Card.CardContentContainer
+      layout_properties: {grid_position: 'WMYVWP,ZZBSBV'}
+      name: card_category_form
+      properties: {}
+      type: form:dep_dapp798jbsn8mq:_Components.Card
+    - components:
+      - layout_properties: {}
+        name: btn_save_category
+        properties: {text: Save}
+        type: form:dep_dapp798jbsn8mq:_Components.Button
+      - layout_properties: {}
+        name: btn_cancel_category
+        properties: {text: Cancel}
+        type: form:dep_dapp798jbsn8mq:_Components.Button
+      layout_properties: {grid_position: 'ZJLWXO,FBGFRH'}
+      name: flow_panel_1
+      properties: {}
+      type: FlowPanel
+    - components:
+      - layout_properties: {grid_position: 'GCKOOD,YPOTWA'}
+        name: ico_empty_state
+        properties: {icon: 'mi:category'}
+        type: form:dep_dapp798jbsn8mq:_Components.IconButton
+      - layout_properties: {grid_position: 'TUOKRN,UTAKGZ'}
+        name: hdg_empty_state
+        properties: {text: No categories yet}
+        type: form:dep_dapp798jbsn8mq:_Components.Heading
+      - layout_properties: {grid_position: 'XJQTRW,NXLIUQ'}
+        name: txt_empty_state
+        properties: {text: Create categories to organize your blog posts.}
+        type: form:dep_dapp798jbsn8mq:_Components.Text
+      layout_properties: {grid_position: 'RLDAWW,DJGADK'}
+      name: col_empty_state
+      properties: {}
+      type: ColumnPanel
+    layout_properties: {grid_position: 'IPIFBK,JBPQLJ'}
+    name: col_categories
+    properties: {}
+    type: ColumnPanel
   layout_properties: {slot: default}
   name: content_panel
   properties: {}
