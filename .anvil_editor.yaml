@@ -29,6 +29,7 @@ unique_ids:
     blog.CategoryManagementForm: '1778323067026856289610539.4166'
     blog.CategoryManagementForm.CategoryManagementTemplate: '1782300608843217222879251.3171'
     blog.CommentModerationForm: '1780494516690166209497686.3573'
+    blog.CommentModerationForm.CommentModerationTemplate: '1782304105094504763291786.393'
     bookings.AvailabilitySettingsForm: '1778322751611593035891969.4341'
     bookings.BookingCalendarForm: '1778322433949291259304635.57404'
     bookings.BookingCalendarForm.tmpl_day_event: '1779264968553720681962834.3193'

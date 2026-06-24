@@ -1,5 +1,88 @@
 components:
-- layout_properties: {slot: default}
+- components:
+  - components:
+    - layout_properties: {grid_position: 'RIVYCI,DQIWJF'}
+      name: hdg_moderation_title
+      properties: {text: Comment Moderation}
+      type: form:dep_dapp798jbsn8mq:_Components.Heading
+    - components:
+      - data_bindings:
+        - {code: 'self.item['''']', property: selected_value, writeback: true}
+        layout_properties: {}
+        name: dd_status_filter
+        properties: {label: Status}
+        type: form:dep_dapp798jbsn8mq:_Components.DropdownMenu
+      - data_bindings:
+        - {code: 'self.item['''']', property: selected_value, writeback: true}
+        layout_properties: {}
+        name: dd_post_filter
+        properties: {label: All Posts}
+        type: form:dep_dapp798jbsn8mq:_Components.DropdownMenu
+      layout_properties: {grid_position: 'IEHZKG,EWOAUY'}
+      name: flow_filters
+      properties: {}
+      type: FlowPanel
+    - components:
+      - components:
+        - components:
+          - name: repeating_panel_1
+            properties: {item_template: blog.CommentModerationForm.CommentModerationTemplate}
+            type: RepeatingPanel
+          layout_properties: {slot: card-content-container-slot}
+          name: dg_comments
+          properties: {}
+          type: DataGrid
+        layout_properties: {slot: card-content-slot}
+        name: card_content_container_1
+        properties: {}
+        type: form:dep_dapp798jbsn8mq:_Components.Card.CardContentContainer
+      layout_properties: {grid_position: 'ENNDQU,HLBAKH'}
+      name: card_comment_list
+      properties: {}
+      type: form:dep_dapp798jbsn8mq:_Components.Card
+    - components:
+      - layout_properties: {}
+        name: btn_prev_page
+        properties: {appearance: outlined, text: Previous}
+        type: form:dep_dapp798jbsn8mq:_Components.Button
+      - layout_properties: {}
+        name: txt_page_info
+        properties: {}
+        type: form:dep_dapp798jbsn8mq:_Components.Text
+      - layout_properties: {}
+        name: btn_next_page
+        properties: {appearance: outlined, text: Next}
+        type: form:dep_dapp798jbsn8mq:_Components.Button
+      layout_properties: {grid_position: 'WRTBFX,XCAYHS'}
+      name: flow_pagination
+      properties: {}
+      type: FlowPanel
+    - components:
+      - layout_properties: {grid_position: 'ZUTGJG,DPWMOF'}
+        name: ico_empty_state
+        properties: {icon: 'mi:chat_bubble_outline'}
+        type: form:dep_dapp798jbsn8mq:_Components.IconButton
+      - layout_properties: {grid_position: 'IGFNSH,HZRPQW'}
+        name: hdg_empty_state
+        properties: {text: No comments to moderate}
+        type: form:dep_dapp798jbsn8mq:_Components.Heading
+      - layout_properties: {grid_position: 'JBOMOD,HLEDEB'}
+        name: txt_empty_state
+        properties: {text: All comments have been reviewed. New comments will appear here}
+        type: form:dep_dapp798jbsn8mq:_Components.Text
+      - layout_properties: {grid_position: 'GKGXXU,KSIPYQ'}
+        name: btn_empty_action
+        properties: {text: View All Comments}
+        type: form:dep_dapp798jbsn8mq:_Components.Button
+      layout_properties: {grid_position: 'NFTNIW,LJAYWR'}
+      name: col_empty_state
+      properties: {}
+      type: ColumnPanel
+    layout_properties: {grid_position: 'THVYXV,KTRRHK'}
+    name: col_moderation
+    properties: {}
+    type: ColumnPanel
+  layout_properties: {slot: default}
   name: content_panel
   properties: {}
   type: ColumnPanel
