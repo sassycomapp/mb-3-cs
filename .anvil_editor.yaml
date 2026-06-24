@@ -21,6 +21,8 @@ unique_ids:
     blog.BlogPostForm.BlogPostClassicTemplate: '178055610342962804728322.27524'
     blog.BlogPostForm.BlogPostFullWidthTemplate: '1780556144854388214688630.73083'
     blog.BlogPostForm.BlogPostTwoColumnTemplate: '1780556123946757815985774.035'
+    blog.BlogPostForm.BlogPostTwoColumnTemplate.ItemTemplate1: '1782294511585390149175950.6339'
+    blog.BlogPostForm.BlogPostTwoColumnTemplate.ItemTemplate2: '1782294584481356568332016.4077'
     blog.BlogPostForm.CategoriesTemplate: '1782227027464899649836768.6793'
     blog.BlogPostForm.CommentsTemplate: '1782227331112729529455559.6743'
     blog.BlogPostForm.RelatedPostsTemplate: '1782225087159276476286017.5845'
