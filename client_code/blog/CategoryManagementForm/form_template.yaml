@@ -18,7 +18,7 @@ components:
       - components:
         - components:
           - name: repeating_panel_1
-            properties: {item_template: blog.CategoryManagementForm.RowTemplate2}
+            properties: {item_template: blog.CategoryManagementForm.CategoryManagementTemplate}
             type: RepeatingPanel
           layout_properties: {slot: card-content-container-slot}
           name: dg_categories

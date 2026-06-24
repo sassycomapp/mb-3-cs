@@ -27,7 +27,7 @@ unique_ids:
     blog.BlogPostForm.CommentsTemplate: '1782227331112729529455559.6743'
     blog.BlogPostForm.RelatedPostsTemplate: '1782225087159276476286017.5845'
     blog.CategoryManagementForm: '1778323067026856289610539.4166'
-    blog.CategoryManagementForm.RowTemplate2: '1782300378508566434260983.724'
+    blog.CategoryManagementForm.CategoryManagementTemplate: '1782300608843217222879251.3171'
     blog.CommentModerationForm: '1780494516690166209497686.3573'
     bookings.AvailabilitySettingsForm: '1778322751611593035891969.4341'
     bookings.BookingCalendarForm: '1778322433949291259304635.57404'
