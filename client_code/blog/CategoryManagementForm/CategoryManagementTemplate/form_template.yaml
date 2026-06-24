@@ -1,3 +1,32 @@
-components: []
+components:
+- components:
+  - layout_properties: {}
+    name: txt_category_name
+    properties: {}
+    type: form:dep_dapp798jbsn8mq:_Components.Text
+  - layout_properties: {}
+    name: txt_slug
+    properties: {}
+    type: form:dep_dapp798jbsn8mq:_Components.Text
+  - layout_properties: {}
+    name: txt_description
+    properties: {}
+    type: form:dep_dapp798jbsn8mq:_Components.Text
+  - layout_properties: {}
+    name: txt_post_coun
+    properties: {}
+    type: form:dep_dapp798jbsn8mq:_Components.Text
+  - layout_properties: {}
+    name: btn_edit
+    properties: {icon: 'mi:edit'}
+    type: form:dep_dapp798jbsn8mq:_Components.IconButton
+  - layout_properties: {}
+    name: btn_delete
+    properties: {icon: 'mi:delete'}
+    type: form:dep_dapp798jbsn8mq:_Components.IconButton
+  layout_properties: {}
+  name: flow_category_row
+  properties: {}
+  type: FlowPanel
 container: {type: DataRowPanel}
 is_package: true
