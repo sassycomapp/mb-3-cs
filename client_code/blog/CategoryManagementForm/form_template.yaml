@@ -86,6 +86,10 @@ components:
         name: txt_empty_state
         properties: {text: Create categories to organize your blog posts.}
         type: form:dep_dapp798jbsn8mq:_Components.Text
+      - layout_properties: {grid_position: 'ZLDIGK,MZVWFN'}
+        name: btn_empty_action
+        properties: {text: Create First Category}
+        type: form:dep_dapp798jbsn8mq:_Components.Button
       layout_properties: {grid_position: 'RLDAWW,DJGADK'}
       name: col_empty_state
       properties: {}
