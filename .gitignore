@@ -7,3 +7,4 @@ agents.md
 opencode.json
 pytest.ini
 tests/
+/.anvil/

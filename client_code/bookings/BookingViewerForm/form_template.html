@@ -1,0 +1,69 @@
+<anvil-form container="HtmlTemplate" prop:html="@theme:standard-page.html">
+
+  <anvil-component type="FlowPanel" name="navbar_links" container:slot="nav-right"></anvil-component>
+
+  <anvil-component type="ColumnPanel" name="col_main" container:slot="default">
+
+    <!-- Header row: title, status badge, back button -->
+    <div class="bvf-header-row">
+      <div class="bvf-title-wrap">
+        <anvil-component type="m3._Components.Heading" name="hdg_booking_title" prop:text="Booking [BK-YYYY-NNN]"></anvil-component>
+      </div>
+      <anvil-component type="m3._Components.Text" name="txt_status_badge" prop:text="[Confirmed / Pending / Cancelled]"></anvil-component>
+      <anvil-component type="m3._Components.Button" name="btn_back" prop:text="Back to Bookings" prop:appearance="text"></anvil-component>
+    </div>
+
+    <!-- Booking details card -->
+    <div class="bvf-card">
+      <anvil-component type="m3._Components.Heading" name="hdg_details_title" prop:text="Booking Details"></anvil-component>
+      <div class="bvf-detail-grid">
+        <div class="bvf-label">Service</div>
+        <anvil-component type="m3._Components.Text" name="txt_service_value" prop:text="[Service Name]"></anvil-component>
+        <div class="bvf-label">Provider</div>
+        <anvil-component type="m3._Components.Text" name="txt_provider_value" prop:text="[Provider Name]"></anvil-component>
+        <div class="bvf-label">Date</div>
+        <anvil-component type="m3._Components.Text" name="txt_date_value" prop:text="[DD MMM YYYY]"></anvil-component>
+        <div class="bvf-label">Time</div>
+        <anvil-component type="m3._Components.Text" name="txt_time_value" prop:text="[HH:MM – HH:MM]"></anvil-component>
+        <div class="bvf-label">Meeting Type</div>
+        <anvil-component type="m3._Components.Text" name="txt_meeting_value" prop:text="[In-Person / Video Call / Phone Call]"></anvil-component>
+        <div class="bvf-label">Booking Type</div>
+        <anvil-component type="m3._Components.Text" name="txt_type_value" prop:text="[appointment / consulting]"></anvil-component>
+        <div class="bvf-label">Total Price</div>
+        <anvil-component type="m3._Components.Text" name="txt_price_value" prop:text="[R amount]"></anvil-component>
+        <div class="bvf-label">Payment Status</div>
+        <anvil-component type="m3._Components.Text" name="txt_payment_value" prop:text="[paid / pending / failed]"></anvil-component>
+        <div class="bvf-label">Special Requests</div>
+        <anvil-component type="m3._Components.Text" name="txt_special_value" prop:text="[special requests text or 'None']"></anvil-component>
+        <div class="bvf-label">Created</div>
+        <anvil-component type="m3._Components.Text" name="txt_created_value" prop:text="[DD MMM YYYY HH:MM]"></anvil-component>
+      </div>
+    </div>
+
+    <!-- Customer card -->
+    <div class="bvf-card">
+      <anvil-component type="m3._Components.Heading" name="hdg_customer_title" prop:text="Customer"></anvil-component>
+      <div class="bvf-detail-grid">
+        <div class="bvf-label">Name</div>
+        <anvil-component type="m3._Components.Text" name="txt_customer_name" prop:text="[Customer Name]"></anvil-component>
+        <div class="bvf-label">Email</div>
+        <anvil-component type="m3._Components.Text" name="txt_customer_email" prop:text="[customer@email.com]"></anvil-component>
+        <div class="bvf-label">Phone</div>
+        <anvil-component type="m3._Components.Text" name="txt_customer_phone" prop:text="[phone number]"></anvil-component>
+      </div>
+      <div class="bvf-contact-link">
+        <anvil-component type="m3._Components.Link" name="nav_view_contact" prop:text="View Contact"></anvil-component>
+      </div>
+    </div>
+
+    <!-- Action buttons (visibility controlled from Python per booking status) -->
+    <div class="bvf-action-row">
+      <anvil-component type="m3._Components.Button" name="btn_edit" prop:text="Edit Booking" prop:appearance="outlined"></anvil-component>
+      <anvil-component type="m3._Components.Button" name="btn_cancel_booking" prop:text="Cancel Booking" prop:appearance="outlined"></anvil-component>
+      <anvil-component type="m3._Components.Button" name="btn_reschedule" prop:text="Reschedule" prop:appearance="outlined"></anvil-component>
+      <anvil-component type="m3._Components.Button" name="btn_view_invoice" prop:text="View Invoice" prop:appearance="outlined"></anvil-component>
+    </div>
+
+  </anvil-component>
+
+</anvil-form>
