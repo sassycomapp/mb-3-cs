@@ -1896,7 +1896,8 @@ dependencies:
   version: {version_tag: v0.6.1}
 name: mb-3-cs
 native_deps:
-  head_html: |2+
+  head_html: |+
+    <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1/dist/floating-ui.dom.umd.min.js"></script>
 
 package_name: mb_3_cs
 renamed: true
