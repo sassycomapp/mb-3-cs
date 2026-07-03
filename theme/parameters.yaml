@@ -29,6 +29,11 @@ color_scheme:
   - {color: 'rgba(0, 104, 116, 0.05)', name: Primary Overlay 1}
   - {color: 'rgba(0, 104, 116, 0.08)', name: Primary Overlay 2}
   - {color: 'rgba(0, 104, 116, 0.11)', name: Primary Overlay 3}
+  - {color: 'rgba(29, 27, 32, 0.04)', name: Disabled Container 2}
+  - {color: '#410E0B', name: On Error Container}
+  - {color: '#000000', name: ''}
+  - {color: '#000000', name: ''}
+  - {color: 'rgba(179, 38, 30, 0.12)', name: Error Overlay 2}
   preset_groups:
   - name: Colour Scheme
     options:
