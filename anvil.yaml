@@ -966,6 +966,49 @@ db_schema:
     indexes: []
     server: full
     title: email_templates
+  error_log:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: tomestamp
+      type: datetime
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: function_name
+      type: string
+    - admin_ui: {order: 2, width: 200}
+      client_hidden: false
+      name: error_type
+      type: string
+    - admin_ui: {order: 3, width: 200}
+      client_hidden: false
+      name: error_message
+      type: string
+    - admin_ui: {order: 4, width: 200}
+      client_hidden: false
+      name: severity
+      type: string
+    - admin_ui: {order: 5, width: 200}
+      client_hidden: false
+      name: user_id
+      target: users
+      type: link_single
+    - admin_ui: {order: 6, width: 200}
+      client_hidden: false
+      name: resolved
+      type: bool
+    - admin_ui: {order: 7, width: 200}
+      client_hidden: false
+      name: resolved_at
+      type: datetime
+    - admin_ui: {order: 8, width: 200}
+      client_hidden: false
+      name: created_at
+      type: datetime
+    indexes: []
+    server: full
+    title: error_log
   files:
     client: none
     columns:
