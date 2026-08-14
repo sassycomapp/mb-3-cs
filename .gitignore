@@ -8,3 +8,4 @@ opencode.json
 pytest.ini
 tests/
 /.anvil/
+graphify-out/
